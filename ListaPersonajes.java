@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ListaPersonajes {
 
@@ -18,6 +19,11 @@ public class ListaPersonajes {
 	public ListaPersonajes getListaPersonajes()
 	{
 		return miListaPersonajes;
+	}
+	
+	private Iterator<Personaje> getIterador()
+	{
+		return this.lista.iterator();
 	}
 	
 	//otros metodos

@@ -1,6 +1,7 @@
 package org.pmoo.Akinator;
 
 public class Personaje {
+	
 	//atributos
 	private String nombre;
 	private ListaAtributos lista;
@@ -26,6 +27,6 @@ public class Personaje {
 	//otros metodos
 	public boolean comprobarAtributo(String pAtributoRelacion)
 	{
-		this.lista.comprobarAtributo();
+		return this.lista.comprobarAtributo(pAtributoRelacion);
 	}
 }

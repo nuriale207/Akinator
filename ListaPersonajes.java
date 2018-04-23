@@ -27,5 +27,20 @@ public class ListaPersonajes {
 	}
 	
 	//otros metodos
-	
+	public void eliminarPersonajePorAtributo(String pAtributoRelacion, boolean pRespuesta)
+	{
+		Iterator<Personaje>itr=getIterador();
+		Personaje unPersonaje=null;
+		boolean esta=false;
+		
+		while(itr.hasNext())
+		{
+			unPersonaje=itr.next();
+			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && !pRespuesta) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta))
+			{
+				this.lista.remove(unPersonaje);
+			}
+		}
+		
+	}
 }

@@ -1,10 +1,13 @@
 //package Akinator;
 
 public class Pregunta {
-	private String atributoRelacion;
+	
+	//atributos
+	private Atributo atributoRelacion;
 	private String pregunta;
 	
-	public Pregunta(String pAtributoRelacion, String pPregunta) {
+	//constructora
+	public Pregunta(Atributo pAtributoRelacion, String pPregunta) {
 		this.atributoRelacion=pAtributoRelacion;
 		this.pregunta= pPregunta;
 	}
@@ -15,15 +18,17 @@ public class Pregunta {
 
 	private boolean cogerRespuesta() {
 		boolean respuesta= false;
+		
 		return respuesta;
 		
 	}
 	
-	public void realizarPregunta() {
-		this.printPregunta();		
+	public boolean realizarPregunta() {
+		this.printPregunta();
+		return this.cogerRespuesta();
 	}
 	
-	public String getAtributo() {
+	public Atributo getAtributo() {
 		return this.atributoRelacion;
 	}
 }

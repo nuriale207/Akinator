@@ -6,13 +6,12 @@ public class ListaPersonajes {
 	//atributos
 	private static ListaPersonajes miListaPersonajes=new ListaPersonajes();
 	private ArrayList<Personaje> lista;
-	private ListaAtributos listaTodosLosAtributos;
+	private static ListaAtributos listaTodosLosAtributos=miListaPersonajes.concatenarListas();
 	  
 	//constructora
-	private ListaPersonajes ()
+	private ListaPersonajes()
 	{
 		  this.lista=new ArrayList<Personaje>();
-		  this.listaTodosLosAtributos=new ListaAtributos();
 	}
 	
 	//getters
@@ -21,12 +20,23 @@ public class ListaPersonajes {
 		return miListaPersonajes;
 	}
 	
+	public int getSize()
+	{
+		return this.lista.size();
+	}
+	
+	
 	private Iterator<Personaje> getIterador()
 	{
 		return this.lista.iterator();
 	}
 	
 	//otros metodos
+	public void anadirPersonaje(Personaje pPersonaje)
+	{
+		this.lista.add(pPersonaje);
+	}
+	
 	public void eliminarPersonajePorAtributo(String pAtributoRelacion, boolean pRespuesta)
 	{
 		Iterator<Personaje>itr=getIterador();
@@ -41,6 +51,15 @@ public class ListaPersonajes {
 				this.lista.remove(unPersonaje);
 			}
 		}
-		
 	}
+	
+	public Atributo buscarAtributoMasFrecuente()
+	{
+		return listaTodosLosAtributos.buscarAtributoMasFrecuente();
+	}
+	
+	/*private ListaAtributos concatenarListas()
+	{
+		
+	}*/
 }

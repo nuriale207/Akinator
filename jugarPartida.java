@@ -1,4 +1,4 @@
-package Akinator;
+//package Akinator;
 
 public class jugarPartida {
 	
@@ -7,8 +7,8 @@ public class jugarPartida {
 	}
 
 	public void jugarPartida() {
-		ListaPreguntas lista= null;
+		ListaPreguntas lista = null;
 		lista=lista.getListaPreguntas();
-		lista.realizarPregunta();
+		lista.realizarPreguntas();
 	}
 }

@@ -22,6 +22,11 @@ public class ListaAtributos {
 	}
 	
 	//otros metodos
+	public void anadirAtributo(Atributo pAtributo)
+	{
+		this.lista.add(pAtributo);
+	}
+	
 	public boolean comprobarAtributo(String pAtributoRelacion)
 	{
 		boolean esta=false;
@@ -39,6 +44,21 @@ public class ListaAtributos {
 		
 		return esta;
 		
+	}
+	
+	private void quitarAtributosIgualesQue(Atributo pAtributo)
+	{
+		Iterator<Atributo>itr=getIterador();
+		Atributo unAtributo = null;
+		
+		while (itr.hasNext())
+		{
+			unAtributo=itr.next();
+			if (unAtributo==pAtributo)
+			{
+				this.lista.remove(pAtributo);
+			}
+		}
 	}
 	
 	public Atributo buscarAtributoMasFrecuente()
@@ -59,6 +79,8 @@ public class ListaAtributos {
 				atributoFrecuente=unAtributo;
 			}
 		}
+		
+		this.quitarAtributosIgualesQue(atributoFrecuente);
 		
 		return atributoFrecuente;
 		

@@ -58,7 +58,7 @@ public class ListaPersonajes {
 		return listaTodosLosAtributos.buscarAtributoMasFrecuente();
 	}
 	
-	/*private ListaAtributos concatenarListas()
+	/*private ListaAtributos concatenarListasAtributos()
 	{
 		
 	}*/

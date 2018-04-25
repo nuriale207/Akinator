@@ -21,8 +21,7 @@ public class Pregunta {
 	private boolean cogerRespuesta() {
 		boolean respuestaBool= false;
 		Scanner reader = new Scanner(System.in);
-		String respuestaString = reader.nextLine();
-		respuestaString=respuestaString.toLowerCase();
+		String respuestaString = reader.nextLine().toLowerCase();
 		
 		if (respuestaString=="si")
 		{

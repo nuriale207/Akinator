@@ -61,17 +61,14 @@ public class ListaPreguntas{
 	}
 	
 	public void realizarPreguntas()
-	{
-		Iterator<Pregunta>itr=getIterador();
-		Pregunta unaPregunta=null;
-		
+	{	
 		while (ListaPersonajes.getListaPersonajes().getSize()>1)
 		{
 			Atributo atributoAct=ListaPersonajes.getListaPersonajes().buscarAtributoMasFrecuente();
 			Pregunta preguntaAct = this.buscarPreguntaPorAtributo(atributoAct);
 			
 			boolean respuesta=preguntaAct.realizarPregunta();
-			ListaPersonajes.eliminarPersonajePorAtributo(atributoAct,respuesta);
+			ListaPersonajes.getListaPersonajes().eliminarPersonajePorAtributo(atributoAct.getValor(),respuesta);
 			
 		}
 		

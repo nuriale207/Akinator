@@ -15,7 +15,7 @@ public class ListaPersonajes {
 	}
 	
 	//getters
-	public ListaPersonajes getListaPersonajes()
+	public static ListaPersonajes getListaPersonajes()
 	{
 		return miListaPersonajes;
 	}

@@ -74,6 +74,16 @@ public class ListaPreguntas{
 			ListaPersonajes.eliminarPersonajePorAtributo(atributoAct,respuesta);
 			
 		}
+		
+		if (ListaPersonajes.getListaPersonajes().getSize()==0)
+		{
+			System.out.println("No se cual es tu personaje. Me has ganado");
+		}
+		else
+		{
+			//preguntar por el personaje y si lo es imprimir por pantalla --> He acertado
+		}
+			
 	}
 	
 	

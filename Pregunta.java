@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //package Akinator;
 
 public class Pregunta {
@@ -17,9 +19,17 @@ public class Pregunta {
 	}
 
 	private boolean cogerRespuesta() {
-		boolean respuesta= false;
+		boolean respuestaBool= false;
+		Scanner reader = new Scanner(System.in);
+		String respuestaString = reader.nextLine();
+		respuestaString=respuestaString.toLowerCase();
 		
-		return respuesta;
+		if (respuestaString=="si")
+		{
+			respuestaBool=true;
+		}
+		
+		return respuestaBool;
 		
 	}
 	

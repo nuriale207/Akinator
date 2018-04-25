@@ -1,6 +1,7 @@
 //package org.pmoo.Akinator;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class ListaAtributos {
@@ -37,6 +38,29 @@ public class ListaAtributos {
 		}
 		
 		return esta;
+		
+	}
+	
+	public Atributo buscarAtributoMasFrecuente()
+	{
+		Iterator<Atributo>itr=getIterador();
+		Atributo unAtributo = null;
+		int veces=0;
+		int mayorVeces=0;
+		Atributo atributoFrecuente=null;
+		
+		while(itr.hasNext())
+		{
+			unAtributo=itr.next();
+			veces=Collections.frequency(this.lista, unAtributo);
+			if (veces>mayorVeces)
+			{
+				mayorVeces=veces;
+				atributoFrecuente=unAtributo;
+			}
+		}
+		
+		return atributoFrecuente;
 		
 	}
 }

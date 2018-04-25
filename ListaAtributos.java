@@ -1,4 +1,4 @@
-package org.pmoo.Akinator;
+//package org.pmoo.Akinator;
 
 import java.util.ArrayList;
 import java.util.Iterator;

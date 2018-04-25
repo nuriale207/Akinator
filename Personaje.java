@@ -1,4 +1,4 @@
-package org.pmoo.Akinator;
+//package org.pmoo.Akinator;
 
 public class Personaje {
 	

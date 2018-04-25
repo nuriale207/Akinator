@@ -1,4 +1,4 @@
-package Akinator;
+//package Akinator;
 
 public class Pregunta {
 	private String atributoRelacion;

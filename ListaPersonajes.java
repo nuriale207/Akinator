@@ -7,6 +7,7 @@ public class ListaPersonajes {
 	private static ListaPersonajes miListaPersonajes=new ListaPersonajes();
 	private ArrayList<Personaje> lista;
 	private static ListaAtributos listaTodosLosAtributos=miListaPersonajes.concatenarListas();
+	
 	  
 	//constructora
 	private ListaPersonajes()

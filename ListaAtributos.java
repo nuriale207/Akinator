@@ -85,4 +85,11 @@ public class ListaAtributos {
 		return atributoFrecuente;
 		
 	}
+	private ArrayList<Atributo> getLista(){
+		return this.lista;
+	}
+	public ArrayList<Atributo> concatenarListas(ListaAtributos pListaAtributos) {
+		ListaAtributos lista;
+		this.lista.addAll(pListaAtributos.getLista());
+		 return this.lista;
 }

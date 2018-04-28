@@ -56,7 +56,18 @@ public class ListaPersonajes {
 	
 	public Atributo buscarAtributoMasFrecuente()
 	{
-		return listaTodosLosAtributos.buscarAtributoMasFrecuente();
+		Iterator<Personaje>itr=getIterador();
+		Personaje unPersonaje=null;
+		ListaAtributos unaLista=null;
+		ListaAtributos unaListaT=new ListaAtributos();
+		while(itr.hasNext()) {
+			unPersonaje=itr.next();
+			unaLista=unPersonaje.getListaAtributos();
+			unaListaT.concatenarListas(unaLista);
+	
+		}
+		return unaListaT.buscarAtributoMasFrecuente();
+		//return listaTodosLosAtributos.buscarAtributoMasFrecuente();
 	}
 	
 	/*private ListaAtributos concatenarListasAtributos()

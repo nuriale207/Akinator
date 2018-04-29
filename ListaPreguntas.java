@@ -49,7 +49,7 @@ public class ListaPreguntas{
 	
 	//otros metodos
 	
-	public ListaPreguntas getListaPreguntas()
+	public static ListaPreguntas getListaPreguntas()
 	{
 		return miListaPreguntas;
 	}
@@ -95,5 +95,7 @@ public class ListaPreguntas{
 			
 	}
 	
-	
+	public void resetear() {
+		this.lista=new ArrayList<Pregunta>();
+	}
 }

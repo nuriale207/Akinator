@@ -38,6 +38,7 @@ public class ListaPersonajes {
 		this.lista.add(pPersonaje);
 	}
 	
+	
 	public void eliminarPersonajePorAtributo(String pAtributoRelacion, boolean pRespuesta)
 	{
 		Iterator<Personaje>itr=getIterador();
@@ -70,8 +71,7 @@ public class ListaPersonajes {
 		//return listaTodosLosAtributos.buscarAtributoMasFrecuente();
 	}
 	
-	/*private ListaAtributos concatenarListasAtributos()
-	{
-		
-	}*/
+	public void vaciarLista() {
+		this.lista=new ArrayList<Personaje>();
+	}
 }

@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 //package Akinator;
 
+import java.util.Scanner;
+
+//package Akinator;
+
 public class Pregunta {
 	
 	//atributos

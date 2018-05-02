@@ -1,5 +1,6 @@
 //package org.pmoo.Akinator;
 
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -27,7 +28,7 @@ public class ListaAtributos {
 		this.lista.add(pAtributo);
 	}
 	
-	public boolean comprobarAtributo(String pAtributoRelacion)
+	public boolean comprobarAtributo(Atributo pAtributoRelacion)
 	{
 		boolean esta=false;
 		Iterator<Atributo>itr=getIterador();
@@ -36,7 +37,7 @@ public class ListaAtributos {
 		while(itr.hasNext() && !esta)
 		{
 			unAtributo=itr.next();
-			if (unAtributo.getValor()==pAtributoRelacion)
+			if (unAtributo==pAtributoRelacion)
 			{
 				esta=true;
 			}
@@ -80,7 +81,7 @@ public class ListaAtributos {
 			}
 		}
 		
-		this.quitarAtributosIgualesQue(atributoFrecuente);
+		//this.quitarAtributosIgualesQue(atributoFrecuente);
 		
 		return atributoFrecuente;
 		
@@ -92,4 +93,14 @@ public class ListaAtributos {
 		ListaAtributos lista;
 		this.lista.addAll(pListaAtributos.getLista());
 		 return this.lista;
+}
+	public void eliminarAtributo(String pValor) {
+		for(Atributo unAtributo: this.lista) {
+			if(pValor==unAtributo.getValor()) {
+				this.lista.remove(unAtributo);
+			}
+		}
+		
+		
+	}
 }

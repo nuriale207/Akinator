@@ -7,10 +7,10 @@ public class Personaje {
 	private ListaAtributos lista;
 	
 	//constructora
-	public Personaje (String pNombre, ListaAtributos pLista)
+	public Personaje (String pNombre)
 	{
 		this.nombre=pNombre;
-		this.lista=pLista;
+		this.lista=new ListaAtributos();
 	}
 	
 	//getters 
@@ -24,9 +24,14 @@ public class Personaje {
 		return this.lista;
 	}
 	
+	public void añadirAtributo(Atributo pAtributo) {
+		this.lista.anadirAtributo(pAtributo);
+	}
+	
 	//otros metodos
-	public boolean comprobarAtributo(String pAtributoRelacion)
+	public boolean comprobarAtributo(Atributo pAtributoRelacion)
 	{
 		return this.lista.comprobarAtributo(pAtributoRelacion);
 	}
 }
+

@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -53,6 +54,9 @@ public class ListaPreguntas{
 	{
 		return miListaPreguntas;
 	}
+	public void anadirPregunta(Pregunta pPregunta) {
+		this.lista.add(pPregunta);
+	}
 	
 	private Pregunta buscarPreguntaPorAtributo(Atributo pAtributo)
 	{
@@ -80,7 +84,7 @@ public class ListaPreguntas{
 			Pregunta preguntaAct = this.buscarPreguntaPorAtributo(atributoAct);
 			
 			boolean respuesta=preguntaAct.realizarPregunta();
-			ListaPersonajes.getListaPersonajes().eliminarPersonajePorAtributo(atributoAct.getValor(),respuesta);
+			ListaPersonajes.getListaPersonajes().eliminarPersonajePorAtributo(atributoAct,respuesta);
 			
 		}
 		
@@ -98,4 +102,5 @@ public class ListaPreguntas{
 	public void resetear() {
 		this.lista=new ArrayList<Pregunta>();
 	}
+	
 }

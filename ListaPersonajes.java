@@ -6,7 +6,7 @@ public class ListaPersonajes {
 	//atributos
 	private static ListaPersonajes miListaPersonajes=new ListaPersonajes();
 	private ArrayList<Personaje> lista;
-	private static ListaAtributos listaTodosLosAtributos=miListaPersonajes.concatenarListas();
+	//private static ListaAtributos listaTodosLosAtributos=miListaPersonajes.concatenarListas();
 	
 	  
 	//constructora
@@ -32,26 +32,25 @@ public class ListaPersonajes {
 		return this.lista.iterator();
 	}
 	
-	//otros metodos
+	//otros metodos.
 	public void anadirPersonaje(Personaje pPersonaje)
 	{
 		this.lista.add(pPersonaje);
 	}
 	
-	
-	public void eliminarPersonajePorAtributo(String pAtributoRelacion, boolean pRespuesta)
+	public void eliminarPersonajePorAtributo(Atributo pAtributoRelacion, boolean pRespuesta)
 	{
-		Iterator<Personaje>itr=getIterador();
-		Personaje unPersonaje=null;
-		boolean esta=false;
-		
-		while(itr.hasNext())
+		for (Personaje unPersonaje : this.lista)
 		{
-			unPersonaje=itr.next();
 			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && !pRespuesta) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta))
 			{
 				this.lista.remove(unPersonaje);
 			}
+			else if(unPersonaje.comprobarAtributo(pAtributoRelacion)|| pRespuesta) {
+				unPersonaje.getListaAtributos().eliminarAtributo(pAtributoRelacion.getValor());
+			
+			}
+		//boolean esta=false;
 		}
 	}
 	

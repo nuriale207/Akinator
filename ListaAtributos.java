@@ -1,6 +1,8 @@
 //package packAkinator;
 
 
+//package packAkinator;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -94,12 +96,14 @@ public class ListaAtributos {
 		this.lista.addAll(pListaAtributos.getLista());
 		 return this.lista;
 }
-	public void eliminarAtributo(String pValor) {
-		for(Atributo unAtributo: this.lista) {
-			if(pValor==unAtributo.getValor()) {
-				this.lista.remove(unAtributo);
-			}
+	public void eliminarAtributo(Atributo pAtributo) {
+		if (this.lista.contains(pAtributo)) {
+			this.lista.remove(pAtributo);
 		}
+//		for(Atributo unAtributo: this.lista) {
+//			if(pValor.contentEquals(unAtributo.getValor())) {
+//				this.lista.remove(unAtributo);
+//			}
 		
 		
 	}

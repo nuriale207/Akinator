@@ -43,15 +43,16 @@ public class ListaPersonajes {
 	public void eliminarPersonajePorAtributo(Atributo pAtributoRelacion, boolean pRespuesta)
 	{
 		
-		for (Personaje unPersonaje : this.lista)
+		for (int i = 0; i < this.lista.size(); i++) 
 		{
+			Personaje unPersonaje= this.lista.get(i);
 			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && !pRespuesta) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta))
 			{	
-				
 				this.lista.remove(unPersonaje);
-				System.out.println("he borrado");
+				System.out.println("He borrado: " + unPersonaje.getNombre());
+				i--;
 			}
-			else if(unPersonaje.comprobarAtributo(pAtributoRelacion)|| pRespuesta) {
+			else if(unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta) {
 				unPersonaje.getListaAtributos().eliminarAtributo(pAtributoRelacion);			
 			}
 			

@@ -1,4 +1,4 @@
-package packAkinator;
+//package packAkinator;
 
 import static org.junit.Assert.*;
 

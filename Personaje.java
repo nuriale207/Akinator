@@ -24,7 +24,7 @@ public class Personaje {
 		return this.lista;
 	}
 	
-	public void añadirAtributo(Atributo pAtributo) {
+	public void anadirAtributo(Atributo pAtributo) {
 		this.lista.anadirAtributo(pAtributo);
 	}
 	

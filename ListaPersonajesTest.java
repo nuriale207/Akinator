@@ -1,4 +1,4 @@
-package packAkinator;
+//package packAkinator;
 
 import static org.junit.Assert.*;
 
@@ -17,7 +17,7 @@ public class ListaPersonajesTest {
 		a1=new Atributo("moreno");
 		a2=new Atributo("animal");
 		a3=new Atributo("alto");
-		p1.añadirAtributo(a1);
+		p1.anadirAtributo(a1);
 		l1=ListaPersonajes.getListaPersonajes();
 		l1.anadirPersonaje(p1);
 	}
@@ -51,7 +51,7 @@ public class ListaPersonajesTest {
 	
 	@Test
 	public void testEliminarPersonajePorAtributo() {
-		//si se vacía la lista entera da error
+		//si se vacï¿½a la lista entera da error
 		l1.anadirPersonaje(p2);
 		l1.eliminarPersonajePorAtributo(a1, false);
 		assertEquals(l1.getSize(),1);

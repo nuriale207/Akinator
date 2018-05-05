@@ -1,4 +1,4 @@
-package packAkinator;
+//package packAkinator;
 
 import static org.junit.Assert.*;
 
@@ -41,16 +41,16 @@ public class PersonajeTest {
 
 	@Test
 	public void testGetListaAtributos() {
-		p1.añadirAtributo(a1);
-		p1.añadirAtributo(a2);
+		p1.anadirAtributo(a1);
+		p1.anadirAtributo(a2);
 		assertNotNull(p1.getListaAtributos());
 		assertFalse(p2.getListaAtributos().comprobarAtributo(a1));
 	}
 
 	@Test
 	public void testComprobarAtributo() {
-		p1.añadirAtributo(a1);
-		p1.añadirAtributo(a2);
+		p1.anadirAtributo(a1);
+		p1.anadirAtributo(a2);
 		assertTrue(p1.comprobarAtributo(a1));
 		assertFalse(p1.comprobarAtributo(a3));
 		}

@@ -1,4 +1,4 @@
-package packAkinator;
+//package packAkinator;
 
 import static org.junit.Assert.*;
 
@@ -17,19 +17,19 @@ public class ListaPreguntasTest {
 	public void setUp() throws Exception {
 		p1=new Personaje("gigante");
 		p2= new Personaje("bambi");
-		p1.añadirAtributo(a1);
-		p1.añadirAtributo(a3);
-		p2.añadirAtributo(a2);
-		p2.añadirAtributo(a1);
+		p1.anadirAtributo(a1);
+		p1.anadirAtributo(a3);
+		p2.anadirAtributo(a2);
+		p2.anadirAtributo(a1);
 		lp1=ListaPersonajes.getListaPersonajes();
 		lp1.anadirPersonaje(p1);
 		lp1.anadirPersonaje(p2);
 		a1=new Atributo("moreno");
 		a2=new Atributo("animal");
 		a3=new Atributo("alto");
-		pr1=new Pregunta(a1 ,"¿Es moreno?");
-		pr2=new Pregunta(a2,"¿Es un animal?");
-		pr3=new Pregunta(a3,"¿Es alto?");
+		pr1=new Pregunta(a1 ,"ï¿½Es moreno?");
+		pr2=new Pregunta(a2,"ï¿½Es un animal?");
+		pr3=new Pregunta(a3,"ï¿½Es alto?");
 		l1=ListaPreguntas.getListaPreguntas();
 		l1.anadirPregunta(pr1);
 	

@@ -1,4 +1,3 @@
-package packAkinator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -40,6 +39,24 @@ public class ListaPersonajes {
 		this.lista.add(pPersonaje);
 	}
 	
+//	public void eliminarPersonajePorAtributo(Atributo pAtributoRelacion, boolean pRespuesta)
+//	{
+//		
+//		for (Personaje unPersonaje : this.lista)
+//		{
+//			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && !pRespuesta) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta))
+//			{	
+//				
+//				this.lista.remove(unPersonaje);
+//				System.out.println("he borrado");
+//			}
+//			else if(unPersonaje.comprobarAtributo(pAtributoRelacion)|| pRespuesta) {
+//				unPersonaje.getListaAtributos().eliminarAtributo(pAtributoRelacion);			
+//			}
+//			
+//		//boolean esta=false;
+//		}
+//	}
 	public void eliminarPersonajePorAtributo(Atributo pAtributoRelacion, boolean pRespuesta)
 	{
 		
@@ -49,7 +66,7 @@ public class ListaPersonajes {
 			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && !pRespuesta) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta))
 			{	
 				this.lista.remove(unPersonaje);
-				System.out.println("He borrado: " + unPersonaje.getNombre());
+				//System.out.println("He borrado: " + unPersonaje.getNombre());
 				i--;
 			}
 			else if(unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta) {
@@ -59,7 +76,6 @@ public class ListaPersonajes {
 		//boolean esta=false;
 		}
 	}
-	
 	public Atributo buscarAtributoMasFrecuente()
 	{
 		Iterator<Personaje>itr=getIterador();
@@ -79,5 +95,16 @@ public class ListaPersonajes {
 	public void vaciarLista() {
 		this.lista=new ArrayList<Personaje>();
 	}
+	
+	public void imprimir() {
+		Personaje unPersonaje=null;
+		Iterator<Personaje>itr=getIterador();
+		while(itr.hasNext()) {
+			unPersonaje=itr.next();
+			if(unPersonaje!=null) {
+				System.out.print(unPersonaje.getNombre());
+			}
+			
+		}
+	}
 }
-

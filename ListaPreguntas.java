@@ -1,4 +1,6 @@
 
+//package packAkinator;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -84,6 +86,7 @@ public class ListaPreguntas{
 			Pregunta preguntaAct = this.buscarPreguntaPorAtributo(atributoAct);
 			
 			boolean respuesta=preguntaAct.realizarPregunta();
+			
 			ListaPersonajes.getListaPersonajes().eliminarPersonajePorAtributo(atributoAct,respuesta);
 			
 		}
@@ -104,3 +107,4 @@ public class ListaPreguntas{
 	}
 	
 }
+

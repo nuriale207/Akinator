@@ -1,3 +1,5 @@
+package packAkinator;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -40,16 +42,19 @@ public class ListaPersonajes {
 	
 	public void eliminarPersonajePorAtributo(Atributo pAtributoRelacion, boolean pRespuesta)
 	{
+		
 		for (Personaje unPersonaje : this.lista)
 		{
 			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && !pRespuesta) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta))
-			{
+			{	
+				
 				this.lista.remove(unPersonaje);
+				System.out.println("he borrado");
 			}
 			else if(unPersonaje.comprobarAtributo(pAtributoRelacion)|| pRespuesta) {
-				unPersonaje.getListaAtributos().eliminarAtributo(pAtributoRelacion.getValor());
-			
+				unPersonaje.getListaAtributos().eliminarAtributo(pAtributoRelacion);			
 			}
+			
 		//boolean esta=false;
 		}
 	}
@@ -74,3 +79,4 @@ public class ListaPersonajes {
 		this.lista=new ArrayList<Personaje>();
 	}
 }
+

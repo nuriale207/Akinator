@@ -1,7 +1,3 @@
-//package packAkinator;
-
-
-//package packAkinator;
 
 import java.util.ArrayList;
 import java.util.Collections;

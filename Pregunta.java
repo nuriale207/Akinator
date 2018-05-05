@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 //package Akinator;
 
-import java.util.Scanner;
-
-//package Akinator;
-
 public class Pregunta {
 	
 	//atributos
@@ -27,18 +23,32 @@ public class Pregunta {
 		Scanner reader = new Scanner(System.in);
 		String respuestaString = reader.nextLine().toLowerCase();
 		
-		if (respuestaString=="si")
+		if (respuestaString=="si"||respuestaString=="sí")
 		{
 			respuestaBool=true;
 		}
-		
+		reader.close();
 		return respuestaBool;
 		
 	}
 	
 	public boolean realizarPregunta() {
-		this.printPregunta();
-		return this.cogerRespuesta();
+		System.out.println(this.pregunta);
+		boolean respuestaBool= false;
+		Scanner reader = new Scanner(System.in);
+		String respuestaString = reader.nextLine();
+		
+		//System.out.println(respuestaString);
+		if (respuestaString.contentEquals("si"))
+		{
+			
+			respuestaBool=true;
+		}
+		
+		return respuestaBool;
+		
+//		this.printPregunta();
+//		return this.cogerRespuesta();
 	}
 	
 	public Atributo getAtributo() {

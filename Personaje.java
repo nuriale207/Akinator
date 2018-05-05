@@ -1,5 +1,3 @@
-//package org.pmoo.Akinator;
-
 public class Personaje {
 	
 	//atributos

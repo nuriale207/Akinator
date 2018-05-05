@@ -1,3 +1,5 @@
+package packAkinator;
+
 public class Atributo {
 	
 	//atributos
@@ -13,3 +15,4 @@ public class Atributo {
 		return this.valor;
 	}
 }
+

@@ -1,8 +1,7 @@
 
-//package packAkinator;
-
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class ListaPreguntas{
 	
@@ -97,7 +96,18 @@ public class ListaPreguntas{
 		}
 		else
 		{
-			//preguntar por el personaje y si lo es imprimir por pantalla --> He acertado
+			System.out.print("¿Estabas pensando en ");
+			ListaPersonajes.getListaPersonajes().imprimir();
+			System.out.print("?");
+			
+			Scanner reader = new Scanner(System.in);
+			String respuestaString = reader.nextLine().toLowerCase();
+			
+			if (respuestaString.contentEquals("si")||respuestaString.contentEquals("sí"))
+			{
+				System.out.println("jejeje soy un genio. ¡Te he ganado!");
+			}
+			else {System.out.println("No te vayas a confiar,pero por una vez me has ganado");}
 		}
 			
 	}

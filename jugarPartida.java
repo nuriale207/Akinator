@@ -50,6 +50,57 @@ public class jugarPartida {
         Pregunta pSexoFemenino=new Pregunta(sexoFemenino,"¿Es mujer/sexo femenino?");
         ListaPreguntas.getListaPreguntas().anadirPregunta(pSexoFemenino);
         
+	Atributo director=new Atributo("director");
+        Pregunta pdirector=new Pregunta(director,"¿Su oficio es ser director?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pdirector);
+        
+        Atributo barba=new Atributo("barba");
+        Pregunta pbarba=new Pregunta(barba,"¿Tiene barba?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pbarba);
+        
+        Atributo blanco=new Atributo("blanco");
+        Pregunta pblanco=new Pregunta(blanco,"¿Tiene el pelo canoso/blanco?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pblanco);
+        
+	Atributo guardabosques=new Atributo("guardabosques");
+        Pregunta pguardabosques=new Pregunta(guardabosques,"¿Trabaja como guardabosques?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pguardabosques);
+        
+        Atributo bondad=new Atributo("bondad");
+        Pregunta pbondad=new Pregunta(bondad,"¿Destaca el personaje por su bondad?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pbondad);
+        
+        Atributo hermanos=new Atributo("hermanos");
+        Pregunta phermanos=new Pregunta(hermanos,"¿Tiene hermanas/os?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(phermanos);
+        
+        Atributo miedoso=new Atributo("miedoso");
+        Pregunta pmiedoso=new Pregunta(miedoso,"¿Destaca por ser miedoso?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pmiedoso);
+        
+        Atributo herbología=new Atributo("herbología");
+        Pregunta pherbología=new Pregunta(herbología,"¿Le gustan las plantas o trabaja en algo relacionado con ellas?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pherbología);
+        
+        Atributo profesor=new Atributo("profesor");
+        Pregunta pprofesor=new Pregunta(profesor,"¿Es profesor/a?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pprofesor);
+        
+        Atributo voldemort=new Atributo("voldemort");
+        Pregunta pvoldemort=new Pregunta(voldemort,"¿Ha sido alguna vez aliado de voldemort?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pvoldemort);
+        
+        Atributo slytherin=new Atributo("slytherin");
+        Pregunta pslytherin=new Pregunta(slytherin,"¿Pertenece/perteneció a slytherin?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pslytherin);
+      
+	Atributo fantasma=new Atributo("fantasma");
+        Pregunta pfantasma=new Pregunta(fantasma,"¿Es un fantasma?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(pfantasma);
+        
+        Atributo tristeza=new Atributo("tristeza");
+        Pregunta ptristeza=new Pregunta(tristeza,"¿Destaca por su tristeza?");
+        ListaPreguntas.getListaPreguntas().anadirPregunta(ptristeza);
         Atributo marvel=new Atributo("marvel");
         Pregunta pMarvel=new Pregunta(marvel,"¿Pertenece al universo de Marvel?");
         ListaPreguntas.getListaPreguntas().anadirPregunta(pMarvel);
@@ -191,6 +242,63 @@ public class jugarPartida {
         RonWeasley.anadirAtributo(pelirrojo);
         RonWeasley.anadirAtributo(miedoArañas);
         ListaPersonajes.getListaPersonajes().anadirPersonaje(RonWeasley);
+		
+	 Personaje dumbledore=new Personaje("Dumbledore");
+        dumbledore.anadirAtributo(mago);
+        dumbledore.anadirAtributo(hogwarts);
+        dumbledore.anadirAtributo(director);
+        dumbledore.anadirAtributo(blanco);
+        dumbledore.anadirAtributo(barba);
+        dumbledore.anadirAtributo(inteligencia);
+        dumbledore.anadirAtributo(gafas);
+        dumbledore.anadirAtributo(gryffindor);
+        ListaPersonajes.getListaPersonajes().anadirPersonaje(dumbledore);
+        
+        Personaje hagrid=new Personaje("Hagrid");
+        hagrid.anadirAtributo(gigante);
+        hagrid.anadirAtributo(guardabosques);
+        hagrid.anadirAtributo(moreno);
+        hagrid.anadirAtributo(barba);
+        hagrid.anadirAtributo(hogwarts);
+        hagrid.anadirAtributo(bondad);
+        hagrid.anadirAtributo(hermanos);
+        hagrid.anadirAtributo(gryffindor);
+        ListaPersonajes.getListaPersonajes().anadirPersonaje(hagrid);
+        
+        Personaje neville=new Personaje("Neville Longbottom");
+        neville.anadirAtributo(mago);
+        neville.anadirAtributo(moreno);
+        neville.anadirAtributo(gryffindor);
+        neville.anadirAtributo(hogwarts);
+        neville.anadirAtributo(miedoso);
+        neville.anadirAtributo(herbología);
+        ListaPersonajes.getListaPersonajes().anadirPersonaje(neville);
+        
+        Personaje snape=new Personaje("Snape");
+        snape.anadirAtributo(mago);
+        snape.anadirAtributo(profesor);
+        snape.anadirAtributo(moreno);
+        snape.anadirAtributo(voldemort);
+        snape.anadirAtributo(hogwarts);
+        snape.anadirAtributo(slytherin);
+        ListaPersonajes.getListaPersonajes().anadirPersonaje(snape);
+        
+        Personaje draco =new Personaje("Draco Malfoy");
+        draco.anadirAtributo(mago);
+        draco.anadirAtributo(rubio);
+        draco.anadirAtributo(voldemort);
+        draco.anadirAtributo(slytherin);
+        draco.anadirAtributo(hogwarts);
+        ListaPersonajes.getListaPersonajes().anadirPersonaje(draco);
+        
+        Personaje myrtle =new Personaje("Myrtle Warren");
+        myrtle.anadirAtributo(hogwarts);
+        myrtle.anadirAtributo(fantasma);
+        myrtle.anadirAtributo(tristeza);
+        myrtle.anadirAtributo(gafas);
+        myrtle.anadirAtributo(moreno);
+        ListaPersonajes.getListaPersonajes().anadirPersonaje(myrtle); 
+        
         
         Personaje IronMan=new Personaje("Iron Man / Tony Stark");
         IronMan.anadirAtributo(marvel);

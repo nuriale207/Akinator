@@ -39,7 +39,7 @@ public class jugarPartida {
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(pMoreno);
 	        
 	        Atributo inteligencia=new Atributo("inteligencia");
-	        Pregunta pInteligencia=new Pregunta(inteligencia,"¿Destaca por su inteligencia?");
+	        Pregunta pInteligencia=new Pregunta(inteligencia,"¿Tiene un intelecto elevado?");
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(pInteligencia);
 	        
 	        Atributo castaño=new Atributo("castaño");

@@ -352,7 +352,7 @@ public class jugarPartida {
 	        
 	        Personaje IronMan=new Personaje("Iron Man / Tony Stark");
 	        IronMan.anadirAtributo(marvel);
-	        IronMan.anadirAtributo(castaño);
+	        IronMan.anadirAtributo(moreno);
 	        IronMan.anadirAtributo(rico);
 	        IronMan.anadirAtributo(sarcastico);
 	        IronMan.anadirAtributo(cientifico);

@@ -10,7 +10,7 @@ public class jugarPartida {
 	       		+ "Minerva McGonagall,");
 	       System.out.println("             Fred y George Weasley, Luna Lovegood, Ginny Weasley ");
 	       System.out.println( );
-	       System.out.println("Superheroes: Iron Man, Spiderman, Capitán América,Hulk, Lobezno, Thor, Viuda Negra, Star Lord, Grood ,Doctor Strange, Mística, Pantera Negra, ");
+	       System.out.println("Superheroes: Iron Man, Spiderman, Capitán América,Hulk, Lobezno, Thor, Viuda Negra, Star Lord, Groot ,Doctor Strange, Mística, Pantera Negra, ");
 	       System.out.println("              Shuri, Wonder Woman, Batman, Superman, Flash, Green Arrow");
 	       System.out.println( );
 	       System.out.println("¿Te has decidido ya? Si es el caso, responde a las preguntas que irán apareciendo en pantalla con un si o un no.");

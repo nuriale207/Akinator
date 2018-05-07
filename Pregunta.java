@@ -21,34 +21,20 @@ public class Pregunta {
 	private boolean cogerRespuesta() {
 		boolean respuestaBool= false;
 		Scanner reader = new Scanner(System.in);
-		String respuestaString = reader.nextLine().toLowerCase();
+		String respuestaString = reader.nextLine();
+		respuestaString.toLowerCase();
 		
-		if (respuestaString=="si"||respuestaString=="sí")
+		if (respuestaString.contentEquals("si") || respuestaString.contentEquals("sí") || respuestaString.contentEquals("s"))
 		{
 			respuestaBool=true;
 		}
-		reader.close();
 		return respuestaBool;
 		
 	}
 	
 	public boolean realizarPregunta() {
-		System.out.println(this.pregunta);
-		boolean respuestaBool= false;
-		Scanner reader = new Scanner(System.in);
-		String respuestaString = reader.nextLine();
-		
-		//System.out.println(respuestaString);
-		if (respuestaString.contentEquals("si"))
-		{
-			
-			respuestaBool=true;
-		}
-		
-		return respuestaBool;
-		
-//		this.printPregunta();
-//		return this.cogerRespuesta();
+		this.printPregunta();
+		return this.cogerRespuesta();	
 	}
 	
 	public Atributo getAtributo() {

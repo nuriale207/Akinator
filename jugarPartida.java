@@ -1,7 +1,15 @@
 //package Akinator;
 
 
-public class jugarPartida {
+public class JugarPartida {
+	public JugarPartida() {
+		
+	}
+	
+	public void jugarPartida() {
+		ListaPreguntas.getListaPreguntas().realizarPreguntas();
+		
+	}
 	public static void main (String [ ] args) {
 
 	       System.out.println ("Bienvenido a Akinator el juego que trata de adivinar en quien estas pensando. Antes de comenzar elige un personaje de la siguiente lista:");
@@ -553,8 +561,8 @@ public class jugarPartida {
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(GreenArrow);
 	        
 	        
-	        ListaPreguntas.getListaPreguntas().realizarPreguntas();
-
+	        JugarPartida partida=new JugarPartida();
+	        partida.jugarPartida();
 	}
 
 }

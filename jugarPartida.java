@@ -1,6 +1,10 @@
 //package Akinator;
 
 
+package packAkinator;
+
+
+
 public class JugarPartida {
 	public JugarPartida() {
 		
@@ -18,7 +22,7 @@ public class JugarPartida {
 	       		+ "Minerva McGonagall,");
 	       System.out.println("             Fred y George Weasley, Luna Lovegood, Ginny Weasley ");
 	       System.out.println( );
-	       System.out.println("Superheroes: Iron Man, Spiderman, Capitán América,Hulk, Lobezno, Thor, Viuda Negra, Star Lord, Groot ,Doctor Strange, Mística, Pantera Negra, ");
+	       System.out.println("Superheroes: Iron Man, Spiderman, Capitán América,Hulk, Lobezno, Thor, Viuda Negra, Star Lord, Grood ,Doctor Strange, Mística, Pantera Negra, ");
 	       System.out.println("              Shuri, Wonder Woman, Batman, Superman, Flash, Green Arrow");
 	       System.out.println( );
 	       System.out.println("¿Te has decidido ya? Si es el caso, responde a las preguntas que irán apareciendo en pantalla con un si o un no.");
@@ -47,7 +51,7 @@ public class JugarPartida {
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(pMoreno);
 	        
 	        Atributo inteligencia=new Atributo("inteligencia");
-	        Pregunta pInteligencia=new Pregunta(inteligencia,"¿Tiene un intelecto elevado?");
+	        Pregunta pInteligencia=new Pregunta(inteligencia,"¿Destaca por su inteligencia?");
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(pInteligencia);
 	        
 	        Atributo castaño=new Atributo("castaño");
@@ -237,34 +241,35 @@ public class JugarPartida {
 	         * tecnologiaAvanzada, volar, velocidadSobrehumana, gigante, relacionadoAnimal, envejecimientoRetardado, artesMarciales,
 	         * guardianesGalaxia, artesMisticas, levitar, teletransportacion, manipulacionTiempo, visionLaser, agilidad, rubio, sinPelo,
 	        */
-	        Personaje HarryPotter=new Personaje("Harry Potter");
-	        HarryPotter.anadirAtributo(moreno);
-	        HarryPotter.anadirAtributo(gafas);
-	        HarryPotter.anadirAtributo(hogwarts);
-	        HarryPotter.anadirAtributo(gryffindor);
-	        HarryPotter.anadirAtributo(cicatriz);
-	        HarryPotter.anadirAtributo(mago);
-	        HarryPotter.anadirAtributo(rico);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(HarryPotter);
+	        Personaje harryPotter=new Personaje("Harry Potter");
+	        harryPotter.anadirAtributo(moreno);
+	        harryPotter.anadirAtributo(gafas);
+	        harryPotter.anadirAtributo(hogwarts);
+	        harryPotter.anadirAtributo(gryffindor);
+	        harryPotter.anadirAtributo(cicatriz);
+	        harryPotter.anadirAtributo(mago);
+	        harryPotter.anadirAtributo(rico);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(harryPotter);
 	        
-	        Personaje HermioneGranger=new Personaje("Hermione Granger");
-	        HermioneGranger.anadirAtributo(mago);
-	        HermioneGranger.anadirAtributo(gryffindor);
-	        HermioneGranger.anadirAtributo(hogwarts);
-	        HermioneGranger.anadirAtributo(castaño);
-	        HermioneGranger.anadirAtributo(inteligencia);
-	        HermioneGranger.anadirAtributo(sexoFemenino);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(HermioneGranger);
+	        Personaje hermioneGranger=new Personaje("Hermione Granger");
+	        hermioneGranger.anadirAtributo(mago);
+	        hermioneGranger.anadirAtributo(gryffindor);
+	        hermioneGranger.anadirAtributo(hogwarts);
+	        hermioneGranger.anadirAtributo(castaño);
+	        hermioneGranger.anadirAtributo(inteligencia);
+	        hermioneGranger.anadirAtributo(sexoFemenino);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(hermioneGranger);
 	        
-	        Personaje RonWeasley=new Personaje("Ron Weasley");
-	        RonWeasley.anadirAtributo(mago);
-	        RonWeasley.anadirAtributo(gryffindor);
-	        RonWeasley.anadirAtributo(hogwarts);
-	        RonWeasley.anadirAtributo(pelirrojo);
-	        RonWeasley.anadirAtributo(miedoArañas);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(RonWeasley);
+	        Personaje ronWeasley=new Personaje("Ron Weasley");
+	        ronWeasley.anadirAtributo(mago);
+	        ronWeasley.anadirAtributo(gryffindor);
+	        ronWeasley.anadirAtributo(hogwarts);
+	        ronWeasley.anadirAtributo(pelirrojo);
+	        ronWeasley.anadirAtributo(miedoArañas);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(ronWeasley);
 			
 		 Personaje dumbledore=new Personaje("Dumbledore");
+		 
 	        dumbledore.anadirAtributo(mago);
 	        dumbledore.anadirAtributo(hogwarts);
 	        dumbledore.anadirAtributo(director);
@@ -329,6 +334,7 @@ public class JugarPartida {
 	        mcGonagall.anadirAtributo(inteligencia);
 	        mcGonagall.anadirAtributo(mago);
 	        mcGonagall.anadirAtributo(gafas);
+	        mcGonagall.anadirAtributo(inteligencia);
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(mcGonagall); 
 	        
 	        Personaje lunaLovegood =new Personaje("Luna Lovegood");
@@ -358,211 +364,212 @@ public class JugarPartida {
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(ginnyWeasley); 
 	        
 	        
-	        Personaje IronMan=new Personaje("Iron Man / Tony Stark");
-	        IronMan.anadirAtributo(marvel);
-	        IronMan.anadirAtributo(moreno);
-	        IronMan.anadirAtributo(rico);
-	        IronMan.anadirAtributo(sarcastico);
-	        IronMan.anadirAtributo(cientifico);
-	        IronMan.anadirAtributo(inteligencia);
-	        IronMan.anadirAtributo(volar);
-	        IronMan.anadirAtributo(vengadores);
-	        IronMan.anadirAtributo(tecnologiaAvanzada);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(IronMan);
+	        Personaje ironMan=new Personaje("Iron Man / Tony Stark");
+	        ironMan.anadirAtributo(marvel);
+	        ironMan.anadirAtributo(castaño);
+	        ironMan.anadirAtributo(rico);
+	        ironMan.anadirAtributo(sarcastico);
+	        ironMan.anadirAtributo(cientifico);
+	        ironMan.anadirAtributo(inteligencia);
+	        ironMan.anadirAtributo(volar);
+	        ironMan.anadirAtributo(vengadores);
+	        ironMan.anadirAtributo(tecnologiaAvanzada);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(ironMan);
 	        
-	        Personaje Spiderman=new Personaje("Spiderman / Peter Parker");
-	        Spiderman.anadirAtributo(marvel);
-	        Spiderman.anadirAtributo(castaño);
-	        Spiderman.anadirAtributo(inteligencia);
-	        Spiderman.anadirAtributo(vengadores);
-	        Spiderman.anadirAtributo(cientifico);
-	        Spiderman.anadirAtributo(humanoMutado);
-	        Spiderman.anadirAtributo(fuerzaSobrehumana);
-	        Spiderman.anadirAtributo(velocidadSobrehumana);
-	        Spiderman.anadirAtributo(rapidezCurativa);
-	        Spiderman.anadirAtributo(relacionadoAnimal);
-	        Spiderman.anadirAtributo(agilidad);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Spiderman);
+	        Personaje spiderman=new Personaje("Spiderman / Peter Parker");
+	        spiderman.anadirAtributo(marvel);
+	        spiderman.anadirAtributo(castaño);
+	        spiderman.anadirAtributo(inteligencia);
+	        spiderman.anadirAtributo(vengadores);
+	        spiderman.anadirAtributo(cientifico);
+	        spiderman.anadirAtributo(humanoMutado);
+	        spiderman.anadirAtributo(fuerzaSobrehumana);
+	        spiderman.anadirAtributo(velocidadSobrehumana);
+	        spiderman.anadirAtributo(rapidezCurativa);
+	        spiderman.anadirAtributo(relacionadoAnimal);
+	        spiderman.anadirAtributo(agilidad);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(spiderman);
 	        
-	        Personaje CapitanAmerica=new Personaje("Capitan America / Steve Rogers");
-	        CapitanAmerica.anadirAtributo(marvel);
-	        CapitanAmerica.anadirAtributo(inteligencia);
-	        CapitanAmerica.anadirAtributo(humanoMutado);
-	        CapitanAmerica.anadirAtributo(vengadores);
-	        CapitanAmerica.anadirAtributo(rubio);
-	        CapitanAmerica.anadirAtributo(velocidadSobrehumana);
-	        CapitanAmerica.anadirAtributo(rapidezCurativa);
-	        CapitanAmerica.anadirAtributo(fuerzaSobrehumana);
-	        CapitanAmerica.anadirAtributo(agilidad);
-	        CapitanAmerica.anadirAtributo(artesMarciales);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(CapitanAmerica);
+	        Personaje capitanAmerica=new Personaje("Capitan America / Steve Rogers");
+	        capitanAmerica.anadirAtributo(marvel);
+	        capitanAmerica.anadirAtributo(inteligencia);
+	        capitanAmerica.anadirAtributo(humanoMutado);
+	        capitanAmerica.anadirAtributo(vengadores);
+	        capitanAmerica.anadirAtributo(rubio);
+	        capitanAmerica.anadirAtributo(velocidadSobrehumana);
+	        capitanAmerica.anadirAtributo(rapidezCurativa);
+	        capitanAmerica.anadirAtributo(fuerzaSobrehumana);
+	        capitanAmerica.anadirAtributo(agilidad);
+	        capitanAmerica.anadirAtributo(artesMarciales);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(capitanAmerica);
 	        
-	        Personaje Hulk=new Personaje("Hulk / Bruce Banner");
-	        Hulk.anadirAtributo(marvel);
-	        Hulk.anadirAtributo(inteligencia);
-	        Hulk.anadirAtributo(humanoMutado);
-	        Hulk.anadirAtributo(vengadores);
-	        Hulk.anadirAtributo(moreno);
-	        Hulk.anadirAtributo(fuerzaSobrehumana);
-	        Hulk.anadirAtributo(rapidezCurativa);
-	        Hulk.anadirAtributo(velocidadSobrehumana);
-	        Hulk.anadirAtributo(gigante);
-	        Hulk.anadirAtributo(inteligencia);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Hulk);
+	        Personaje hulk=new Personaje("Hulk / Bruce Banner");
+	        hulk.anadirAtributo(marvel);
+	        hulk.anadirAtributo(inteligencia);
+	        hulk.anadirAtributo(humanoMutado);
+	        hulk.anadirAtributo(vengadores);
+	        hulk.anadirAtributo(moreno);
+	        hulk.anadirAtributo(fuerzaSobrehumana);
+	        hulk.anadirAtributo(rapidezCurativa);
+	        hulk.anadirAtributo(velocidadSobrehumana);
+	        hulk.anadirAtributo(gigante);
+	        hulk.anadirAtributo(inteligencia);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(hulk);
 	        
-	        Personaje Lobezno=new Personaje("Lobezno");
-	        Lobezno.anadirAtributo(marvel);
-	        Lobezno.anadirAtributo(moreno);
-	        Lobezno.anadirAtributo(fuerzaSobrehumana);
-	        Lobezno.anadirAtributo(humanoMutado);
-	        Lobezno.anadirAtributo(relacionadoAnimal);
-	        Lobezno.anadirAtributo(rapidezCurativa);
-	        Lobezno.anadirAtributo(xmen);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Lobezno);		
+	        Personaje lobezno=new Personaje("Lobezno");
+	        lobezno.anadirAtributo(marvel);
+	        lobezno.anadirAtributo(moreno);
+	        lobezno.anadirAtributo(fuerzaSobrehumana);
+	        lobezno.anadirAtributo(humanoMutado);
+	        lobezno.anadirAtributo(relacionadoAnimal);
+	        lobezno.anadirAtributo(rapidezCurativa);
+	        lobezno.anadirAtributo(xmen);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(lobezno);		
 	        
-	        Personaje Thor=new Personaje("Thor");
-	        Thor.anadirAtributo(marvel);
-	        Thor.anadirAtributo(rubio);
-	        Thor.anadirAtributo(fuerzaSobrehumana);
-	        Thor.anadirAtributo(envejecimientoRetardado);
-	        Thor.anadirAtributo(vengadores);
-	        Thor.anadirAtributo(volar);
-	        Thor.anadirAtributo(rapidezCurativa);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Thor);
+	        Personaje thor=new Personaje("Thor");
+	        thor.anadirAtributo(marvel);
+	        thor.anadirAtributo(rubio);
+	        thor.anadirAtributo(fuerzaSobrehumana);
+	        thor.anadirAtributo(envejecimientoRetardado);
+	        thor.anadirAtributo(vengadores);
+	        thor.anadirAtributo(volar);
+	        thor.anadirAtributo(rapidezCurativa);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(thor);
 	        
-	        Personaje ViudaNegra=new Personaje("Viuda Negra / Natasha ");
-	        ViudaNegra.anadirAtributo(sexoFemenino);
-	        ViudaNegra.anadirAtributo(marvel);
-	        ViudaNegra.anadirAtributo(vengadores);
-	        ViudaNegra.anadirAtributo(pelirrojo);
-	        ViudaNegra.anadirAtributo(agilidad);
-	        ViudaNegra.anadirAtributo(artesMarciales);
-	        ViudaNegra.anadirAtributo(inteligencia);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(ViudaNegra);
+	        Personaje viudaNegra=new Personaje("Viuda Negra / Natasha ");
+	        viudaNegra.anadirAtributo(sexoFemenino);
+	        viudaNegra.anadirAtributo(marvel);
+	        viudaNegra.anadirAtributo(vengadores);
+	        viudaNegra.anadirAtributo(pelirrojo);
+	        viudaNegra.anadirAtributo(agilidad);
+	        viudaNegra.anadirAtributo(artesMarciales);
+	        viudaNegra.anadirAtributo(inteligencia);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(viudaNegra);
 	       
-	        Personaje StarLord=new Personaje("Star Lord / Peter Quill");
-	        StarLord.anadirAtributo(marvel);
-	        StarLord.anadirAtributo(guardianesGalaxia);
-	        StarLord.anadirAtributo(rubio);
-	        StarLord.anadirAtributo(sarcastico);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(StarLord);
+	        Personaje starLord=new Personaje("Star Lord / Peter Quill");
+	        starLord.anadirAtributo(marvel);
+	        starLord.anadirAtributo(guardianesGalaxia);
+	        starLord.anadirAtributo(rubio);
+	        starLord.anadirAtributo(sarcastico);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(starLord);
 	        
-	        Personaje Groot=new Personaje("Groot");
-	        Groot.anadirAtributo(marvel);
-	        Groot.anadirAtributo(guardianesGalaxia);
-	        Groot.anadirAtributo(sinPelo);
-	        Groot.anadirAtributo(rapidezCurativa);
-	        Groot.anadirAtributo(fuerzaSobrehumana);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Groot);
+	        Personaje groot=new Personaje("Groot");
+	        groot.anadirAtributo(marvel);
+	        groot.anadirAtributo(guardianesGalaxia);
+	        groot.anadirAtributo(sinPelo);
+	        groot.anadirAtributo(rapidezCurativa);
+	        groot.anadirAtributo(fuerzaSobrehumana);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(groot);
 	        
-	        Personaje DoctorStrange=new Personaje("Doctor Strange");
-	        DoctorStrange.anadirAtributo(marvel);
-	        DoctorStrange.anadirAtributo(manipulacionTiempo);
-	        DoctorStrange.anadirAtributo(castaño);
-	        DoctorStrange.anadirAtributo(sarcastico);
-	        DoctorStrange.anadirAtributo(levitar);
-	        DoctorStrange.anadirAtributo(teletransportacion);
-	        DoctorStrange.anadirAtributo(artesMisticas);
-	        DoctorStrange.anadirAtributo(artesMarciales);
-	        DoctorStrange.anadirAtributo(inteligencia);
-	        DoctorStrange.anadirAtributo(rico);
-	        DoctorStrange.anadirAtributo(envejecimientoRetardado);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(DoctorStrange);
+	        Personaje doctorStrange=new Personaje("Doctor Strange");
+	        doctorStrange.anadirAtributo(marvel);
+	        doctorStrange.anadirAtributo(manipulacionTiempo);
+	        doctorStrange.anadirAtributo(castaño);
+	        doctorStrange.anadirAtributo(sarcastico);
+	        doctorStrange.anadirAtributo(levitar);
+	        doctorStrange.anadirAtributo(teletransportacion);
+	        doctorStrange.anadirAtributo(artesMisticas);
+	        doctorStrange.anadirAtributo(artesMarciales);
+	        doctorStrange.anadirAtributo(inteligencia);
+	        doctorStrange.anadirAtributo(rico);
+	        doctorStrange.anadirAtributo(envejecimientoRetardado);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(doctorStrange);
 	        
-	        Personaje Mistica=new Personaje("Mistica");
-	        Mistica.anadirAtributo(marvel);
-	        Mistica.anadirAtributo(sexoFemenino);
-	        Mistica.anadirAtributo(pelirrojo);
-	        Mistica.anadirAtributo(envejecimientoRetardado);
-	        Mistica.anadirAtributo(xmen);
-	        Mistica.anadirAtributo(rapidezCurativa);
-	        Mistica.anadirAtributo(humanoMutado);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Mistica);
+	        Personaje mistica=new Personaje("Mistica");
+	        mistica.anadirAtributo(marvel);
+	        mistica.anadirAtributo(sexoFemenino);
+	        mistica.anadirAtributo(pelirrojo);
+	        mistica.anadirAtributo(envejecimientoRetardado);
+	        mistica.anadirAtributo(xmen);
+	        mistica.anadirAtributo(rapidezCurativa);
+	        mistica.anadirAtributo(humanoMutado);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(mistica);
 	        
-	        Personaje PanteraNegra=new Personaje("Pantera Negra / T'challa");
-	        PanteraNegra.anadirAtributo(marvel);
-	        PanteraNegra.anadirAtributo(moreno);
-	        PanteraNegra.anadirAtributo(agilidad);
-	        PanteraNegra.anadirAtributo(relacionadoAnimal);
-	        PanteraNegra.anadirAtributo(vengadores);
-	        PanteraNegra.anadirAtributo(artesMarciales);
-	        PanteraNegra.anadirAtributo(fuerzaSobrehumana);
-	        PanteraNegra.anadirAtributo(rapidezCurativa);
-	        PanteraNegra.anadirAtributo(velocidadSobrehumana);
-	        PanteraNegra.anadirAtributo(tecnologiaAvanzada);
-	        PanteraNegra.anadirAtributo(rico);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(PanteraNegra);
+	        Personaje panteraNegra=new Personaje("Pantera Negra / T'challa");
+	        panteraNegra.anadirAtributo(marvel);
+	        panteraNegra.anadirAtributo(moreno);
+	        panteraNegra.anadirAtributo(agilidad);
+	        panteraNegra.anadirAtributo(relacionadoAnimal);
+	        panteraNegra.anadirAtributo(vengadores);
+	        panteraNegra.anadirAtributo(artesMarciales);
+	        panteraNegra.anadirAtributo(fuerzaSobrehumana);
+	        panteraNegra.anadirAtributo(rapidezCurativa);
+	        panteraNegra.anadirAtributo(velocidadSobrehumana);
+	        panteraNegra.anadirAtributo(tecnologiaAvanzada);
+	        panteraNegra.anadirAtributo(rico);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(panteraNegra);
 	        
-	        Personaje Shuri=new Personaje("Shuri");
-	        Shuri.anadirAtributo(marvel);
-	        Shuri.anadirAtributo(tecnologiaAvanzada);
-	        Shuri.anadirAtributo(sexoFemenino);
-	        Shuri.anadirAtributo(moreno);
-	        Shuri.anadirAtributo(inteligencia);
-	        Shuri.anadirAtributo(artesMarciales);
-	        Shuri.anadirAtributo(rico);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Shuri);
+	        Personaje shuri=new Personaje("Shuri");
+	        shuri.anadirAtributo(marvel);
+	        shuri.anadirAtributo(tecnologiaAvanzada);
+	        shuri.anadirAtributo(sexoFemenino);
+	        shuri.anadirAtributo(moreno);
+	        shuri.anadirAtributo(inteligencia);
+	        shuri.anadirAtributo(artesMarciales);
+	        shuri.anadirAtributo(rico);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(shuri);
 	        
-	        Personaje WonderWoman=new Personaje("Wonder Woman / Diana Prince");
-	        WonderWoman.anadirAtributo(dc);
-	        WonderWoman.anadirAtributo(moreno);
-	        WonderWoman.anadirAtributo(sexoFemenino);
-	        WonderWoman.anadirAtributo(fuerzaSobrehumana);
-	        WonderWoman.anadirAtributo(envejecimientoRetardado);
-	        WonderWoman.anadirAtributo(velocidadSobrehumana);
-	        WonderWoman.anadirAtributo(rapidezCurativa);
-	        WonderWoman.anadirAtributo(ligaJusticia);
-	        WonderWoman.anadirAtributo(volar);
-	        WonderWoman.anadirAtributo(artesMarciales);
-	        WonderWoman.anadirAtributo(inteligencia);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(WonderWoman);
+	        Personaje wonderWoman=new Personaje("Wonder Woman / Diana Prince");
+	        wonderWoman.anadirAtributo(dc);
+	        wonderWoman.anadirAtributo(moreno);
+	        wonderWoman.anadirAtributo(sexoFemenino);
+	        wonderWoman.anadirAtributo(fuerzaSobrehumana);
+	        wonderWoman.anadirAtributo(envejecimientoRetardado);
+	        wonderWoman.anadirAtributo(velocidadSobrehumana);
+	        wonderWoman.anadirAtributo(rapidezCurativa);
+	        wonderWoman.anadirAtributo(ligaJusticia);
+	        wonderWoman.anadirAtributo(volar);
+	        wonderWoman.anadirAtributo(artesMarciales);
+	        wonderWoman.anadirAtributo(inteligencia);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(wonderWoman);
 	        
-	        Personaje Batman=new Personaje("Batman/Bruce Wayne");
-	        Batman.anadirAtributo(dc);
-	        Batman.anadirAtributo(moreno);
-	        Batman.anadirAtributo(artesMarciales);
-	        Batman.anadirAtributo(ligaJusticia);
-	        Batman.anadirAtributo(rico);
-	        Batman.anadirAtributo(tecnologiaAvanzada);
-	        Batman.anadirAtributo(inteligencia);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Batman);
+	        Personaje batman=new Personaje("Batman/Bruce Wayne");
+	        batman.anadirAtributo(dc);
+	        batman.anadirAtributo(moreno);
+	        batman.anadirAtributo(artesMarciales);
+	        batman.anadirAtributo(ligaJusticia);
+	        batman.anadirAtributo(rico);
+	        batman.anadirAtributo(tecnologiaAvanzada);
+	        batman.anadirAtributo(inteligencia);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(batman);
 	        
-	        Personaje Superman=new Personaje("Superman/Clark Kent");
-	        Superman.anadirAtributo(dc);
-	        Superman.anadirAtributo(moreno);
-	        Superman.anadirAtributo(ligaJusticia);
-	        Superman.anadirAtributo(volar);
-	        Superman.anadirAtributo(visionLaser);
-	        Superman.anadirAtributo(rapidezCurativa);
-	        Superman.anadirAtributo(levitar);
-	        Superman.anadirAtributo(velocidadSobrehumana);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Superman);
+	        Personaje superman=new Personaje("Superman/Clark Kent");
+	        superman.anadirAtributo(dc);
+	        superman.anadirAtributo(moreno);
+	        superman.anadirAtributo(ligaJusticia);
+	        superman.anadirAtributo(volar);
+	        superman.anadirAtributo(visionLaser);
+	        superman.anadirAtributo(rapidezCurativa);
+	        superman.anadirAtributo(levitar);
+	        superman.anadirAtributo(velocidadSobrehumana);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(superman);
 
-	        Personaje Flash=new Personaje("Flash/Barry Allen");
-	        Flash.anadirAtributo(dc);
-	        Flash.anadirAtributo(castaño);
-	        Flash.anadirAtributo(rubio);
-	        Flash.anadirAtributo(velocidadSobrehumana);
-	        Flash.anadirAtributo(humanoMutado);
-	        Flash.anadirAtributo(rapidezCurativa);
-	        Flash.anadirAtributo(cientifico);
-	        Flash.anadirAtributo(manipulacionTiempo);
-	        Flash.anadirAtributo(inteligencia);
-	        Flash.anadirAtributo(tecnologiaAvanzada);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(Flash);
+	        Personaje flash=new Personaje("Flash/Barry Allen");
+	        flash.anadirAtributo(dc);
+	        flash.anadirAtributo(castaño);
+	        flash.anadirAtributo(rubio);
+	        flash.anadirAtributo(velocidadSobrehumana);
+	        flash.anadirAtributo(humanoMutado);
+	        flash.anadirAtributo(rapidezCurativa);
+	        flash.anadirAtributo(cientifico);
+	        flash.anadirAtributo(manipulacionTiempo);
+	        flash.anadirAtributo(inteligencia);
+	        flash.anadirAtributo(tecnologiaAvanzada);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(flash);
 	        
-	        Personaje GreenArrow=new Personaje("Green Arrow / Oliver Queen");
-	        GreenArrow.anadirAtributo(dc);
-	        GreenArrow.anadirAtributo(artesMarciales);
-	        GreenArrow.anadirAtributo(rubio);
-	        GreenArrow.anadirAtributo(rico);
-	        GreenArrow.anadirAtributo(tecnologiaAvanzada);
-	        GreenArrow.anadirAtributo(agilidad);
-	        ListaPersonajes.getListaPersonajes().anadirPersonaje(GreenArrow);
+	        Personaje greenArrow=new Personaje("Green Arrow / Oliver Queen");
+	        greenArrow.anadirAtributo(dc);
+	        greenArrow.anadirAtributo(artesMarciales);
+	        greenArrow.anadirAtributo(rubio);
+	        greenArrow.anadirAtributo(rico);
+	        greenArrow.anadirAtributo(tecnologiaAvanzada);
+	        greenArrow.anadirAtributo(agilidad);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(greenArrow);
 	        
 	        
 	        JugarPartida partida=new JugarPartida();
 	        partida.jugarPartida();
+
 	}
 
 }

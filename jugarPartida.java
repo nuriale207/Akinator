@@ -16,7 +16,7 @@ public class JugarPartida {
 	}
 	public static void main (String [ ] args) {
 
-	       System.out.println ("Bienvenido a Akinator el juego que trata de adivinar en quien estas pensando. Antes de comenzar elige un personaje de la siguiente lista:");
+	       System.out.println ("Bienvenido a Frikkinator el juego que trata de adivinar en quien estas pensando. Antes de comenzar elige un personaje de la siguiente lista:");
 	       System.out.println( );
 	       System.out.println("HarryPotter: Harry Potter, Hermione Granger, Ron Weasley, Dumbledore, Hagrid, Neville Longbottom, Snape, Draco Malfoy, Myrtle la llorona, "
 	       		+ "Minerva McGonagall,");

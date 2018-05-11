@@ -7,7 +7,6 @@ public class ListaPersonajes {
 	//atributos
 	private static ListaPersonajes miListaPersonajes=new ListaPersonajes();
 	private ArrayList<Personaje> lista;
-	//private static ListaAtributos listaTodosLosAtributos=miListaPersonajes.concatenarListas();
 	
 	  
 	//constructora
@@ -89,7 +88,6 @@ public class ListaPersonajes {
 	
 		}
 		return unaListaT.buscarAtributoMasFrecuente();
-		//return listaTodosLosAtributos.buscarAtributoMasFrecuente();
 	}
 	
 	public void vaciarLista() {

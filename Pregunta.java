@@ -18,21 +18,26 @@ public class Pregunta {
 		System.out.println(this.pregunta);
 	}
 
-	private boolean cogerRespuesta() {
-		boolean respuestaBool= false;
+	private String cogerRespuesta() {
+
 		Scanner reader = new Scanner(System.in);
 		String respuestaString = reader.nextLine();
 		respuestaString.toLowerCase();
 		
 		if (respuestaString.contentEquals("si") || respuestaString.contentEquals("sí") || respuestaString.contentEquals("s"))
 		{
-			respuestaBool=true;
+			respuestaString="si";
 		}
-		return respuestaBool;
+		else if (respuestaString.contentEquals("no") || respuestaString.contentEquals("n"))
+			
+		{
+			respuestaString="no";
+		}
+		return respuestaString;
 		
 	}
 	
-	public boolean realizarPregunta() {
+	public String realizarPregunta() {
 		this.printPregunta();
 		return this.cogerRespuesta();	
 	}

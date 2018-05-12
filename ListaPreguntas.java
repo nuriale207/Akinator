@@ -57,7 +57,7 @@ public class ListaPreguntas{
 			Atributo atributoAct=ListaPersonajes.getListaPersonajes().buscarAtributoMasFrecuente();
 			Pregunta preguntaAct = this.buscarPreguntaPorAtributo(atributoAct);
 			
-			boolean respuesta=preguntaAct.realizarPregunta();
+			String respuesta=preguntaAct.realizarPregunta();
 			
 			ListaPersonajes.getListaPersonajes().eliminarPersonajePorAtributo(atributoAct,respuesta);
 			
@@ -90,4 +90,3 @@ public class ListaPreguntas{
 	}
 	
 }
-

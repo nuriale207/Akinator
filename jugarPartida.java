@@ -25,7 +25,7 @@ public class JugarPartida {
 	       System.out.println("Superheroes: Iron Man, Spiderman, Capitán América,Hulk, Lobezno, Thor, Viuda Negra, Star Lord, Grood ,Doctor Strange, Mística, Pantera Negra, ");
 	       System.out.println("              Shuri, Wonder Woman, Batman, Superman, Flash, Green Arrow");
 	       System.out.println( );
-	       System.out.println("¿Te has decidido ya? Si es el caso, responde a las preguntas que irán apareciendo en pantalla con un si o un no.");
+	        System.out.println("¿Te has decidido ya? Si es el caso, responde a las preguntas que irán apareciendo en pantalla con un si, un no o un no se.");
 	        Atributo mago=new Atributo("mago");
 	        Pregunta pMago=new Pregunta(mago,"¿Es mago/a?");
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(pMago);

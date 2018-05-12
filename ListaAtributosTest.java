@@ -76,6 +76,8 @@ public class ListaAtributosTest {
 	public void testEliminarAtributo() {
 		l1.eliminarAtributo(a1);
 		assertFalse(l1.comprobarAtributo(a1));
+		
+		l1.eliminarAtributo(a1);
 	}
 
 }

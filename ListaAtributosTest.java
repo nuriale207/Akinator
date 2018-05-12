@@ -71,5 +71,11 @@ public class ListaAtributosTest {
 		l2.concatenarListas(l1);
 		assertTrue(l2.comprobarAtributo(a1));
 	}
+	
+	@Test
+	public void testEliminarAtributo() {
+		l1.eliminarAtributo(a1);
+		assertFalse(l1.comprobarAtributo(a1));
+	}
 
 }

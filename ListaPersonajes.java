@@ -37,42 +37,24 @@ public class ListaPersonajes {
 	{
 		this.lista.add(pPersonaje);
 	}
-	
-//	public void eliminarPersonajePorAtributo(Atributo pAtributoRelacion, boolean pRespuesta)
-//	{
-//		
-//		for (Personaje unPersonaje : this.lista)
-//		{
-//			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && !pRespuesta) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta))
-//			{	
-//				
-//				this.lista.remove(unPersonaje);
-//				System.out.println("he borrado");
-//			}
-//			else if(unPersonaje.comprobarAtributo(pAtributoRelacion)|| pRespuesta) {
-//				unPersonaje.getListaAtributos().eliminarAtributo(pAtributoRelacion);			
-//			}
-//			
-//		//boolean esta=false;
-//		}
-//	}
-	public void eliminarPersonajePorAtributo(Atributo pAtributoRelacion, boolean pRespuesta)
+
+//	Hemos recorrido la lista de personajes con un indice porque si lo recorriamos con un iterador, al eliminar un personaje, en la siguiente vuelta se saltaba un personaje
+	public void eliminarPersonajePorAtributo(Atributo pAtributoRelacion, String pRespuesta)
 	{
 		
 		for (int i = 0; i < this.lista.size(); i++) 
 		{
 			Personaje unPersonaje= this.lista.get(i);
-			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && !pRespuesta) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta))
+			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("no")) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("si")))
 			{	
 				this.lista.remove(unPersonaje);
 				//System.out.println("He borrado: " + unPersonaje.getNombre());
 				i--;
 			}
-			else if(unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta) {
+			else if((unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("si"))|| (unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("no se"))) {
 				unPersonaje.getListaAtributos().eliminarAtributo(pAtributoRelacion);			
 			}
 			
-		//boolean esta=false;
 		}
 	}
 	public Atributo buscarAtributoMasFrecuente()

@@ -1,3 +1,5 @@
+package packAkinator;
+
 public class Personaje {
 	
 	//atributos
@@ -15,6 +17,9 @@ public class Personaje {
 	public String getNombre()
 	{
 		return this.nombre;
+	}
+	public void imprimir() {
+		System.out.println(this.nombre+" ");
 	}
 	
 	public ListaAtributos getListaAtributos()

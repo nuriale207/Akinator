@@ -1,6 +1,7 @@
-
+package packAkinator;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class ListaPersonajes {
 
@@ -41,9 +42,8 @@ public class ListaPersonajes {
 //	Hemos recorrido la lista de personajes con un indice porque si lo recorriamos con un iterador, al eliminar un personaje, en la siguiente vuelta se saltaba un personaje
 	public void eliminarPersonajePorAtributo(Atributo pAtributoRelacion, String pRespuesta)
 	{
-		
-		for (int i = 0; i < this.lista.size(); i++) 
-		{
+		int i=0;
+		while(i<this.lista.size()) {
 			Personaje unPersonaje= this.lista.get(i);
 			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("no")) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("si")))
 			{	
@@ -54,10 +54,25 @@ public class ListaPersonajes {
 			else if((unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("si"))|| (unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("no se"))) {
 				unPersonaje.getListaAtributos().eliminarAtributo(pAtributoRelacion);			
 			}
-			
+			i++;
 		}
+		
+//		for (int i = 0; i < this.lista.size(); i++) 
+//		{
+//			Personaje unPersonaje= this.lista.get(i);
+//			if ((unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("no")) || (!unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("si")))
+//			{	
+//				this.lista.remove(unPersonaje);
+//				//System.out.println("He borrado: " + unPersonaje.getNombre());
+//				i--;
+//			}
+//			else if((unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("si"))|| (unPersonaje.comprobarAtributo(pAtributoRelacion) && pRespuesta.contentEquals("no se"))) {
+//				unPersonaje.getListaAtributos().eliminarAtributo(pAtributoRelacion);			
+//			}
+//			
+//		}
 	}
-	public Atributo buscarAtributoMasFrecuente()
+	public Atributo buscarAtributoMasFrecuente() 
 	{
 		Iterator<Personaje>itr=getIterador();
 		Personaje unPersonaje=null;
@@ -69,6 +84,25 @@ public class ListaPersonajes {
 			unaListaT.concatenarListas(unaLista);
 	
 		}
+		if(unaListaT.getSize()==0) {
+			Iterator<Personaje>itr2=getIterador();
+			while (itr2.hasNext()) {
+			System.out.print("¿Estabas pensando en ");
+			itr2.next().imprimir();
+			System.out.print("?");
+			
+			Scanner reader = new Scanner(System.in);
+			String respuestaString = reader.nextLine().toLowerCase();
+			
+			if (respuestaString.contentEquals("si")||respuestaString.contentEquals("sí"))
+			{
+				System.out.println("jejeje soy un genio. ¡Te he ganado!");
+				System.exit(0);
+			}
+				 
+		}
+			System.out.println("No te vayas a confiar,pero por una vez me has ganado");
+			System.exit(0);}
 		return unaListaT.buscarAtributoMasFrecuente();
 	}
 	
@@ -82,7 +116,7 @@ public class ListaPersonajes {
 		while(itr.hasNext()) {
 			unPersonaje=itr.next();
 			if(unPersonaje!=null) {
-				System.out.print(unPersonaje.getNombre());
+				unPersonaje.imprimir();
 			}
 			
 		}

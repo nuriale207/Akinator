@@ -14,8 +14,8 @@ public class PreguntaTest {
 		a1=new Atributo("moreno");
 		a2=new Atributo("animal");
 		a3=new Atributo("alto");
-		pr1=new Pregunta(a1 ,"�Es moreno?");
-		pr2=new Pregunta(a2,"�Es un animal?");
+		pr1=new Pregunta(a1 ,"¿Es moreno?");
+		pr2=new Pregunta(a2,"¿Es un animal?");
 	}
 
 	@After

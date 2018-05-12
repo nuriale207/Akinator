@@ -27,9 +27,9 @@ public class ListaPreguntasTest {
 		a1=new Atributo("moreno");
 		a2=new Atributo("animal");
 		a3=new Atributo("alto");
-		pr1=new Pregunta(a1 ,"�Es moreno?");
-		pr2=new Pregunta(a2,"�Es un animal?");
-		pr3=new Pregunta(a3,"�Es alto?");
+		pr1=new Pregunta(a1 ,"¿Es moreno?");
+		pr2=new Pregunta(a2,"¿Es un animal?");
+		pr3=new Pregunta(a3,"¿Es alto?");
 		l1=ListaPreguntas.getListaPreguntas();
 		l1.anadirPregunta(pr1);
 	

@@ -1,4 +1,6 @@
 
+package packAkinator;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -34,6 +36,7 @@ public class ListaPreguntas{
 	
 	private Pregunta buscarPreguntaPorAtributo(Atributo pAtributo)
 	{
+		
 		Iterator<Pregunta>itr=getIterador();
 		Pregunta unaPregunta=null;
 		boolean encontrado=false;

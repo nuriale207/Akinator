@@ -81,7 +81,7 @@ public class ListaPersonajesTest {
 		ListaPersonajes.getListaPersonajes().anadirPersonaje(p2);
 		ListaPersonajes.getListaPersonajes().anadirPersonaje(p4);
 		
-		ListaPersonajes.getListaPersonajes().eliminarPersonajePorAtributo(i1, false);
+		ListaPersonajes.getListaPersonajes().eliminarPersonajePorAtributo(i1, "no");
 		assertEquals(ListaPersonajes.getListaPersonajes().getSize(),2);
 	}
 

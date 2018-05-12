@@ -1,4 +1,6 @@
 
+package packAkinator;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -13,7 +15,9 @@ public class ListaAtributos {
 	{
 		this.lista=new ArrayList<Atributo>();
 	}
-	
+	public int getSize() {
+		return this.lista.size();
+	}
 	//getters
 	private Iterator<Atributo> getIterador()
 	{
@@ -45,6 +49,21 @@ public class ListaAtributos {
 		
 	}
 	
+	private void quitarAtributosIgualesQue(Atributo pAtributo)
+	{
+		Iterator<Atributo>itr=getIterador();
+		Atributo unAtributo = null;
+		
+		while (itr.hasNext())
+		{
+			unAtributo=itr.next();
+			if (unAtributo==pAtributo)
+			{
+				this.lista.remove(pAtributo);
+			}
+		}
+	}
+	
 	public Atributo buscarAtributoMasFrecuente()
 	{
 		Iterator<Atributo>itr=getIterador();
@@ -63,20 +82,34 @@ public class ListaAtributos {
 				atributoFrecuente=unAtributo;
 			}
 		}
+		
+		//this.quitarAtributosIgualesQue(atributoFrecuente);
+		
 		return atributoFrecuente;
 		
 	}
 	private ArrayList<Atributo> getLista(){
 		return this.lista;
 	}
-	public ArrayList<Atributo> concatenarListas(ListaAtributos pListaAtributos) {
-		this.lista.addAll(pListaAtributos.getLista());
-		 return this.lista;
+	public void concatenarListas(ListaAtributos pListaAtributos) {
+//		ListaAtributos lista= new ListaAtributos();
+//		Iterator<Atributo>itr=getIterador();
+//		Atributo unAtributo= null;
+//		while(itr.hasNext()) {
+//			unAtributo=itr.next();
+//			pListaAtributos.anadirAtributo(unAtributo);
+//		}
+      	this.lista.addAll(pListaAtributos.getLista());
+		// return this.lista;
 }
 	public void eliminarAtributo(Atributo pAtributo) {
 		if (this.lista.contains(pAtributo)) {
 			this.lista.remove(pAtributo);
 		}
+//		for(Atributo unAtributo: this.lista) {
+//			if(pValor.contentEquals(unAtributo.getValor())) {
+//				this.lista.remove(unAtributo);
+//			}
 		
 		
 	}

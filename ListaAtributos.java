@@ -83,8 +83,6 @@ public class ListaAtributos {
 			}
 		}
 		
-		//this.quitarAtributosIgualesQue(atributoFrecuente);
-		
 		return atributoFrecuente;
 		
 	}

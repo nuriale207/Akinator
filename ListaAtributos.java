@@ -92,25 +92,13 @@ public class ListaAtributos {
 		return this.lista;
 	}
 	public void concatenarListas(ListaAtributos pListaAtributos) {
-//		ListaAtributos lista= new ListaAtributos();
-//		Iterator<Atributo>itr=getIterador();
-//		Atributo unAtributo= null;
-//		while(itr.hasNext()) {
-//			unAtributo=itr.next();
-//			pListaAtributos.anadirAtributo(unAtributo);
-//		}
-      	this.lista.addAll(pListaAtributos.getLista());
-		// return this.lista;
-}
+
+      		this.lista.addAll(pListaAtributos.getLista());
+	}
 	public void eliminarAtributo(Atributo pAtributo) {
 		if (this.lista.contains(pAtributo)) {
 			this.lista.remove(pAtributo);
 		}
-//		for(Atributo unAtributo: this.lista) {
-//			if(pValor.contentEquals(unAtributo.getValor())) {
-//				this.lista.remove(unAtributo);
-//			}
-		
 		
 	}
 }

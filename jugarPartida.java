@@ -230,6 +230,23 @@ public class JugarPartida {
 	        Pregunta pexcentrico=new Pregunta(excentrico,"¿Es un personaje que llama la atención por su excentricidad?");
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(pexcentrico);
 	        
+		////////NUEVOS
+		Atributo ciego=new Atributo("ciego");
+	        Pregunta pCiego=new Pregunta(ciego,"¿Es ciego?");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pCiego);
+	        
+	        
+	        Atributo telepatia=new Atributo("telepatia");
+	        Pregunta pTelepatia=new Pregunta(telepatia,"¿Puede usar telepatia?");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pTelepatia);
+	        
+	        Atributo inmortal=new Atributo("inmortal");
+	        Pregunta pInmortal=new Pregunta(inmortal,"¿Es inmortal?");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pInmortal);
+	        
+	        Atributo magnetoKinesis=new Atributo("magnetoKinesis");
+	        Pregunta pMagnetoKinesis=new Pregunta(magnetoKinesis,"¿Esta entre sus habilidades la magneto kinesis?");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pMagnetoKinesis);
 	        
 	        /*lista de atributos: mago, gryffindor, hogwarts, cicatriz, gafas, moreno, inteligencia, castaño, pelirrojo, miedoArañas, sexoFemenino, 
 	         * marvel, dc, xmen, ligaJusticia, vengadores, rapidezCurativa, fuerzaSobrehumana, humanoMutado, rico, sarcastico, cientifico
@@ -563,6 +580,79 @@ public class JugarPartida {
 	        greenArrow.anadirAtributo(agilidad);
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(greenArrow);
 	        
+		//////nuevos///////////////////////////////////////////////////////////////////////////
+		Personaje brujaEscarlata=new Personaje("La bruja escarlata/Wanda");
+	        brujaEscarlata.anadirAtributo(marvel);
+	        brujaEscarlata.anadirAtributo(sexoFemenino);
+	        brujaEscarlata.anadirAtributo(vengadores);
+	        brujaEscarlata.anadirAtributo(humanoMutado);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(brujaEscarlata);
+	        
+	        Personaje daredevil=new Personaje("Daredevil/Matt Murdock");
+	        daredevil.anadirAtributo(marvel);
+	        daredevil.anadirAtributo(artesMarciales);
+	        daredevil.anadirAtributo(ciego);
+	        daredevil.anadirAtributo(inteligencia);
+	        daredevil.anadirAtributo(agilidad);
+	        daredevil.anadirAtributo(moreno);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(daredevil);
+	        
+	        Personaje charlesXavier=new Personaje("Charles Xavier / Profesor X");
+	        charlesXavier.anadirAtributo(marvel);
+	        charlesXavier.anadirAtributo(xmen);
+	        charlesXavier.anadirAtributo(humanoMutado);
+	        charlesXavier.anadirAtributo(telepatia);
+	        charlesXavier.anadirAtributo(inteligencia);
+	        charlesXavier.anadirAtributo(castaño);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(charlesXavier);
+	        
+	        Personaje deadpool=new Personaje("Deadpool");
+	        deadpool.anadirAtributo(inmortal);
+	        deadpool.anadirAtributo(marvel);
+	        deadpool.anadirAtributo(artesMarciales);
+	        deadpool.anadirAtributo(sinPelo);
+	        deadpool.anadirAtributo(rapidezCurativa);
+	        deadpool.anadirAtributo(fuerzaSobrehumana);
+	        deadpool.anadirAtributo(sarcastico);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(deadpool);
+	        
+	        Personaje magneto=new Personaje("Magneto");
+	        magneto.anadirAtributo(marvel);
+	        magneto.anadirAtributo(magnetoKinesis);
+	        magneto.anadirAtributo(inteligencia);
+	        magneto.anadirAtributo(humanoMutado);
+	        magneto.anadirAtributo(rubio);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(magneto);
+	        
+	        
+	        Personaje ojoHalcon=new Personaje("Ojo de halcon");
+	        ojoHalcon.anadirAtributo(marvel);
+	        ojoHalcon.anadirAtributo(vengadores);
+	        ojoHalcon.anadirAtributo(relacionadoAnimal);
+	        ojoHalcon.anadirAtributo(artesMarciales);
+	        ojoHalcon.anadirAtributo(rubio);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(ojoHalcon);
+	        
+	        Personaje blackCanary=new Personaje("Canario Negro");
+	        blackCanary.anadirAtributo(dc);
+	        blackCanary.anadirAtributo(sexoFemenino);
+	        blackCanary.anadirAtributo(rubio);
+	        blackCanary.anadirAtributo(artesMarciales);
+	        blackCanary.anadirAtributo(humanoMutado);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(blackCanary);
+	        
+	        Personaje supergirl=new Personaje("Supergirl / Kara");
+	        supergirl.anadirAtributo(dc);
+	        supergirl.anadirAtributo(sexoFemenino);
+	        supergirl.anadirAtributo(rubio);
+	        supergirl.anadirAtributo(volar);
+	        supergirl.anadirAtributo(velocidadSobrehumana);
+	        supergirl.anadirAtributo(visionLaser);
+	        supergirl.anadirAtributo(rapidezCurativa);
+	        supergirl.anadirAtributo(levitar);
+	        supergirl.anadirAtributo(envejecimientoRetardado);
+	        supergirl.anadirAtributo(fuerzaSobrehumana);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(supergirl);
 	        
 	        JugarPartida partida=new JugarPartida();
 	        partida.jugarPartida();

@@ -516,6 +516,7 @@ public class JugarPartida {
 	        wonderWoman.anadirAtributo(volar);
 	        wonderWoman.anadirAtributo(artesMarciales);
 	        wonderWoman.anadirAtributo(inteligencia);
+		wonderWoman.anadirAtributo(inmortal);
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(wonderWoman);
 	        
 	        Personaje batman=new Personaje("Batman/Bruce Wayne");

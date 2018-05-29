@@ -537,6 +537,7 @@ public class JugarPartida {
 	        superman.anadirAtributo(rapidezCurativa);
 	        superman.anadirAtributo(levitar);
 	        superman.anadirAtributo(velocidadSobrehumana);
+		superman.anadirAtributo(fuerzaSobrehumana);
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(superman);
 
 	        Personaje flash=new Personaje("Flash/Barry Allen");

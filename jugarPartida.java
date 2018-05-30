@@ -371,7 +371,7 @@ public class JugarPartida {
 	        neville.anadirAtributo(herbología);
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(neville);
 	        
-	        Personaje snape=new Personaje("Snape");
+	         Personaje snape=new Personaje("Snape");
 	        snape.anadirAtributo(mago);
 	        snape.anadirAtributo(profesor);
 	        snape.anadirAtributo(moreno);

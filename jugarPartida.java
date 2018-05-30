@@ -117,9 +117,9 @@ public class JugarPartida {
 	        Pregunta pprofesor=new Pregunta(profesor,"¿Es profesor/a?");
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(pprofesor);
 	        
-	        Atributo voldemort=new Atributo("voldemort");
-	        Pregunta pvoldemort=new Pregunta(voldemort,"¿Ha sido alguna vez aliado de voldemort?");
-	        ListaPreguntas.getListaPreguntas().anadirPregunta(pvoldemort);
+	      Atributo mortifago=new Atributo("voldemort");
+	        Pregunta pmortifago=new Pregunta(mortifago,"¿Ha sido alguna vez aliado de voldemort(mortífago)?");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pmortifago);
 	        
 	        Atributo slytherin=new Atributo("slytherin");
 	        Pregunta pslytherin=new Pregunta(slytherin,"¿Pertenece/perteneció a slytherin?");
@@ -170,6 +170,15 @@ public class JugarPartida {
 	        Atributo marvel=new Atributo("marvel");
 	        Pregunta pMarvel=new Pregunta(marvel,"¿Pertenece al universo de Marvel?");
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(pMarvel);
+		
+		 
+	        Atributo pobre=new Atributo("pobre");
+	        Pregunta ppobre=new Pregunta(pobre,"¿Es pobre?");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(ppobre);
+	        
+	        Atributo huerfano=new Atributo("huerfano");
+	        Pregunta phuerfano=new Pregunta(huerfano,"¿Es huerfano/a?");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(phuerfano);
 	        
 	        Atributo dc=new Atributo("dc");
 	        Pregunta pDc=new Pregunta(dc,"¿Pertenece al universo de DC?");

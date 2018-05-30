@@ -131,6 +131,41 @@ public class JugarPartida {
 	        Atributo tristeza=new Atributo("tristeza");
 	        Pregunta ptristeza=new Pregunta(tristeza,"¿Destaca por su tristeza?");
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(ptristeza);
+		
+		//nuevos hp
+		
+		 Atributo gordo=new Atributo("gordo");
+	        Pregunta pgordo= new Pregunta( gordo,"¿Está gordo/a? ");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pgordo);
+	        
+	        Atributo omagia=new Atributo("omagia");
+	        Pregunta pomagia= new Pregunta( omagia,"¿Odia el mundo mágico? ");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pomagia);
+	        
+	        Atributo mezquino=new Atributo("mezquino");
+	        Pregunta pmezquino= new Pregunta(mezquino,"¿Es mezquino/a? ");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pmezquino);
+	        
+	        Atributo odiohp=new Atributo("odiohp");
+	        Pregunta podiohp= new Pregunta(odiohp,"¿Odia a Harry Potter? ");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(podiohp);
+	        
+	        Atributo hijos=new Atributo("hijos");
+	        Pregunta phijos= new Pregunta(hijos,"¿Tiene hijos? ");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(phijos);
+	        
+	        Atributo ravenclaw=new Atributo("ravenclaw");
+	        Pregunta pravenclaw= new Pregunta(ravenclaw,"¿Pertenece o perteneció a ravenclaw? ");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pravenclaw);
+	        
+	        Atributo quidditch =new Atributo("quidditch");
+	        Pregunta pquidditch= new Pregunta(quidditch,"¿Juega en algún equipo de quidditch? ");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pquidditch);
+	        
+	        Atributo elfo =new Atributo("elfo");
+	        Pregunta pelfo= new Pregunta(elfo,"¿Es un elfo? ");
+	        ListaPreguntas.getListaPreguntas().anadirPregunta(pelfo);
+	        
 	        Atributo marvel=new Atributo("marvel");
 	        Pregunta pMarvel=new Pregunta(marvel,"¿Pertenece al universo de Marvel?");
 	        ListaPreguntas.getListaPreguntas().anadirPregunta(pMarvel);
@@ -388,6 +423,132 @@ public class JugarPartida {
 	        ginnyWeasley.anadirAtributo(mago);
 	        ginnyWeasley.anadirAtributo(sexoFemenino);
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(ginnyWeasley); 
+		
+		//nuevos personajes
+		
+		 Personaje vernonDursley= new Personaje("Vernon Dursley");
+	        vernonDursley.anadirAtributo(gordo);
+	        vernonDursley.anadirAtributo(moreno);
+	        vernonDursley.anadirAtributo(barba);
+	        vernonDursley.anadirAtributo(odiohp);
+	        vernonDursley.anadirAtributo(omagia);
+	        vernonDursley.anadirAtributo(mezquino);
+	        vernonDursley.anadirAtributo(hijos);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje( vernonDursley); 
+	        
+	        Personaje dudleyDursley= new Personaje("Dudley Dursley");
+	        dudleyDursley.anadirAtributo(gordo);
+	        dudleyDursley.anadirAtributo(moreno);
+	        dudleyDursley.anadirAtributo(miedoso);
+	        dudleyDursley.anadirAtributo(odiohp);
+	        dudleyDursley.anadirAtributo(omagia);
+	        dudleyDursley.anadirAtributo(mezquino);
+	        dudleyDursley.anadirAtributo(hijos);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(dudleyDursley); 
+	        
+	        Personaje petuniaDursley= new Personaje("Petunia Dursley");
+	        petuniaDursley.anadirAtributo(moreno);
+	        petuniaDursley.anadirAtributo(odiohp);
+	        petuniaDursley.anadirAtributo(omagia);
+	        petuniaDursley.anadirAtributo(mezquino);
+	        petuniaDursley.anadirAtributo(hermanos);
+	        petuniaDursley.anadirAtributo(sexoFemenino);
+	        petuniaDursley.anadirAtributo(hijos);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(petuniaDursley); 	  
+	        
+	        Personaje voldemort=new Personaje("Voldemort/Tom Riddle");
+	        voldemort.anadirAtributo(mortifago);
+	        voldemort.anadirAtributo(mago);
+	        voldemort.anadirAtributo(slytherin);
+	        voldemort.anadirAtributo(odiohp);
+	        voldemort.anadirAtributo(sinPelo);
+	        voldemort.anadirAtributo(pobre);
+	        voldemort.anadirAtributo(huerfano);
+	        voldemort.anadirAtributo(mezquino);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(voldemort); 
+	        
+	        Personaje bellatrix=new Personaje("Bellatrix Lestrange");
+	        bellatrix.anadirAtributo(mortifago);
+	        bellatrix.anadirAtributo(mago);
+	        bellatrix.anadirAtributo(slytherin);
+	        bellatrix.anadirAtributo(odiohp);
+	        bellatrix.anadirAtributo(moreno);
+	        bellatrix.anadirAtributo(sexoFemenino);
+	        bellatrix.anadirAtributo(mezquino);
+	        bellatrix.anadirAtributo(hijos);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(bellatrix); 
+	        
+	        Personaje ojoloco=new Personaje("'OJOLOCO'(Alastor) MOODY ");
+	        ojoloco.anadirAtributo(castaño);
+	        ojoloco.anadirAtributo(cicatriz);
+	        ojoloco.anadirAtributo(mago);
+	        ojoloco.anadirAtributo(hogwarts);
+	        ojoloco.anadirAtributo(excentrico);
+	        ojoloco.anadirAtributo(gordo);
+	        ojoloco.anadirAtributo(profesor);
+	        ojoloco.anadirAtributo(bondad);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(ojoloco); 
+	        
+	        
+	        Personaje cho=new Personaje("Cho Chang");
+	        cho.anadirAtributo(moreno);
+	        cho.anadirAtributo(mago);
+	        cho.anadirAtributo(hogwarts);
+	        cho.anadirAtributo(ravenclaw);
+	        cho.anadirAtributo(sexoFemenino);
+	        cho.anadirAtributo(quidditch);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(cho); 
+	        
+	        Personaje arthur=new Personaje("Arthur Weasley");
+	        arthur.anadirAtributo(pelirrojo);
+	        arthur.anadirAtributo(mago);
+	        arthur.anadirAtributo(hijos);
+	        arthur.anadirAtributo(excentrico);
+	        arthur.anadirAtributo(gryffindor);
+	        arthur.anadirAtributo(bondad);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(arthur); 
+	        
+	        Personaje molly=new Personaje("Molly Weasley");
+	        molly.anadirAtributo(pelirrojo);
+	        molly.anadirAtributo(mago);
+	        molly.anadirAtributo(hijos);
+	        molly.anadirAtributo(sexoFemenino);
+	        molly.anadirAtributo(gryffindor);
+	        molly.anadirAtributo(bondad);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(molly); 
+	        
+	        Personaje umbridge=new Personaje("Dolores Umbridge");
+	        umbridge.anadirAtributo(excentrico);
+	        umbridge.anadirAtributo(sarcastico);
+	        umbridge.anadirAtributo(odiohp);
+	        umbridge.anadirAtributo(profesor);
+	        umbridge.anadirAtributo(hogwarts);
+	        umbridge.anadirAtributo(sexoFemenino);
+	        umbridge.anadirAtributo(castaño);
+	        umbridge.anadirAtributo(mago);
+	        umbridge.anadirAtributo(slytherin);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(umbridge); 
+	        
+	        Personaje sprout=new Personaje("Señora Sprout");
+	        sprout.anadirAtributo(mago);
+	        sprout.anadirAtributo(hogwarts);
+	        sprout.anadirAtributo(profesor);
+	        sprout.anadirAtributo(castaño);
+	        sprout.anadirAtributo(herbología);
+	        sprout.anadirAtributo(sexoFemenino);
+	        sprout.anadirAtributo(excentrico);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(sprout); 
+	        
+	        Personaje dobby=new Personaje("Dobby");
+	        dobby.anadirAtributo(sinPelo);
+	        dobby.anadirAtributo(pobre);
+	        dobby.anadirAtributo(tristeza);
+	        dobby.anadirAtributo(bondad);
+	        dobby.anadirAtributo(miedoso);
+	        dobby.anadirAtributo(elfo);
+	        dobby.anadirAtributo(mago);
+	        ListaPersonajes.getListaPersonajes().anadirPersonaje(dobby); 
+	        
 	        
 	        
 	        Personaje ironMan=new Personaje("Iron Man / Tony Stark");

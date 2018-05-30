@@ -10,7 +10,20 @@ public class JugarPartida {
 		
 	}
 	public static void main (String [ ] args) {
+		
 
+		 System.out.println("\r\n" + 
+           		" ________ ________  ___  ___  __    ___  __    ___  ________   ________  _________  ________  ________     \r\n" + 
+           		"|\\  _____\\\\   __  \\|\\  \\|\\  \\|\\  \\ |\\  \\|\\  \\ |\\  \\|\\   ___  \\|\\   __  \\|\\___   ___\\\\   __  \\|\\   __  \\    \r\n" + 
+           		"\\ \\  \\__/\\ \\  \\|\\  \\ \\  \\ \\  \\/  /|\\ \\  \\/  /|\\ \\  \\ \\  \\\\ \\  \\ \\  \\|\\  \\|___ \\  \\_\\ \\  \\|\\  \\ \\  \\|\\  \\   \r\n" + 
+           		" \\ \\   __\\\\ \\   _  _\\ \\  \\ \\   ___  \\ \\   ___  \\ \\  \\ \\  \\\\ \\  \\ \\   __  \\   \\ \\  \\ \\ \\  \\\\\\  \\ \\   _  _\\  \r\n" + 
+           		"  \\ \\  \\_| \\ \\  \\\\  \\\\ \\  \\ \\  \\\\ \\  \\ \\  \\\\ \\  \\ \\  \\ \\  \\\\ \\  \\ \\  \\ \\  \\   \\ \\  \\ \\ \\  \\\\\\  \\ \\  \\\\  \\| \r\n" + 
+           		"   \\ \\__\\   \\ \\__\\\\ _\\\\ \\__\\ \\__\\\\ \\__\\ \\__\\\\ \\__\\ \\__\\ \\__\\\\ \\__\\ \\__\\ \\__\\   \\ \\__\\ \\ \\_______\\ \\__\\\\ _\\ \r\n" + 
+           		"    \\|__|    \\|__|\\|__|\\|__|\\|__| \\|__|\\|__| \\|__|\\|__|\\|__| \\|__|\\|__|\\|__|    \\|__|  \\|_______|\\|__|\\|__|\r\n" + 
+           		"                                                                                                           \r\n" + 
+           		"                                                                                                           \r\n" + 
+           		"                                                                                                           \r\n" + 
+           		"");	
 	       System.out.println ("Bienvenido a Frikkinator el juego que trata de adivinar en quien estas pensando. Antes de comenzar elige un personaje de la siguiente lista:");
 	       System.out.println( );
 	       System.out.println("HarryPotter: Harry Potter, Hermione Granger, Ron Weasley, Dumbledore, Hagrid, Neville Longbottom, Snape, Draco Malfoy, Myrtle la llorona, "
@@ -18,7 +31,8 @@ public class JugarPartida {
 	       System.out.println("             Fred y George Weasley, Luna Lovegood, Ginny Weasley ");
 	       System.out.println( );
 	       System.out.println("Superheroes: Iron Man, Spiderman, Capitán América,Hulk, Lobezno, Thor, Viuda Negra, Star Lord, Grood ,Doctor Strange, Mística, Pantera Negra, ");
-	       System.out.println("              Shuri, Wonder Woman, Batman, Superman, Flash, Green Arrow");
+	       System.out.println("              Shuri, Wonder Woman, Batman, Superman, Flash, Green Arrow, La bruja escarlata, Daredevil");
+	       System.out.println("              Charles Xavier, Deadpool, Magneto, Ojo de Halcon, Black Canary, Supergirl");
 	       System.out.println( );
 	        System.out.println("¿Te has decidido ya? Si es el caso, responde a las preguntas que irán apareciendo en pantalla con un si, un no o un no se.");
 	        Atributo mago=new Atributo("mago");

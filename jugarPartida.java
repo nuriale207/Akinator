@@ -28,7 +28,8 @@ public class JugarPartida {
 	       System.out.println( );
 	       System.out.println("HarryPotter: Harry Potter, Hermione Granger, Ron Weasley, Dumbledore, Hagrid, Neville Longbottom, Snape, Draco Malfoy, Myrtle la llorona, "
 	       		+ "Minerva McGonagall,");
-	       System.out.println("             Fred y George Weasley, Luna Lovegood, Ginny Weasley ");
+	       System.out.println("             Fred y George Weasley, Luna Lovegood, Ginny Weasley, Vernon Dursley, Dudley Dursley, Petunia Dursley,Voldemort/Tom Riddle, Bellatrix,");
+	       System.out.println("              Ojoloco (Alastor) Moody, Cho Chang, Arthur Weasley, Molly Weasley, Dolores Umbridge, Sª Sprout, Dobby");
 	       System.out.println( );
 	       System.out.println("Superheroes: Iron Man, Spiderman, Capitán América,Hulk, Lobezno, Thor, Viuda Negra, Star Lord, Grood ,Doctor Strange, Mística, Pantera Negra, ");
 	       System.out.println("              Shuri, Wonder Woman, Batman, Superman, Flash, Green Arrow, La bruja escarlata, Daredevil");

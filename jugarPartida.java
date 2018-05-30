@@ -375,7 +375,7 @@ public class JugarPartida {
 	        snape.anadirAtributo(mago);
 	        snape.anadirAtributo(profesor);
 	        snape.anadirAtributo(moreno);
-	        snape.anadirAtributo(voldemort);
+	        snape.anadirAtributo(mortifago);
 	        snape.anadirAtributo(hogwarts);
 	        snape.anadirAtributo(slytherin);
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(snape);
@@ -383,7 +383,7 @@ public class JugarPartida {
 	        Personaje draco =new Personaje("Draco Malfoy");
 	        draco.anadirAtributo(mago);
 	        draco.anadirAtributo(rubio);
-	        draco.anadirAtributo(voldemort);
+	        draco.anadirAtributo(mortifago);
 	        draco.anadirAtributo(slytherin);
 	        draco.anadirAtributo(hogwarts);
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(draco);

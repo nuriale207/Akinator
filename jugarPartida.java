@@ -405,7 +405,6 @@ public class JugarPartida {
 	        mcGonagall.anadirAtributo(inteligencia);
 	        mcGonagall.anadirAtributo(mago);
 	        mcGonagall.anadirAtributo(gafas);
-	        mcGonagall.anadirAtributo(inteligencia);
 	        ListaPersonajes.getListaPersonajes().anadirPersonaje(mcGonagall); 
 	        
 	        Personaje lunaLovegood =new Personaje("Luna Lovegood");
